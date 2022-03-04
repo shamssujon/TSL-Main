@@ -1,0 +1,118 @@
+.navbar,
+.navbar > .container {
+    align-items: stretch;
+    position: relative;
+}
+
+.navbar-brand {
+    img {
+        max-height: 50px;
+
+        @include media-breakpoint-up(md) {
+            max-height: 80px;
+        }
+    }
+}
+
+.navbar-toggler {
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
+    }
+}
+
+.navbar-nav {
+    height: 100%;
+
+    .nav-item {
+        @include media-breakpoint-up(lg) {
+            height: 100%;
+        }
+    }
+
+    .nav-link {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .dropdown-menu {
+        margin-top: 0.5rem;
+
+        box-shadow: $box-shadow;
+        border-width: 3px 0 0 0;
+        border-color: $primary;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+            min-width: 20rem;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: $transition-base;
+
+            &.show {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    .dropdown-item {
+        color: $primary;
+        font-size: $font-size-base;
+        white-space: normal;
+        padding: 0.5rem 1.5rem;
+        transition: 0.15s ease;
+
+        &:active,
+        &.active {
+            color: $white;
+        }
+    }
+}
+
+.navbar-collapse {
+    @include media-breakpoint-down(lg) {
+        position: absolute;
+        top: 100%;
+        width: calc(100% - $container-padding-x * 2);
+        left: $container-padding-x;
+        background: #fff;
+        z-index: 100;
+    }
+}
+
+.search-form {
+    .search-btn {
+        color: $primary;
+        font-size: $font-size-lg;
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
+        }
+    }
+
+    .search-input {
+        font-size: $font-size-base;
+        position: absolute;
+        top: calc(100% + $navbar-padding-y);
+        right: $container-padding-x;
+        margin: auto;
+        width: 300px;
+        height: 50px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: $transition-base;
+        z-index: 10;
+
+        &.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+}

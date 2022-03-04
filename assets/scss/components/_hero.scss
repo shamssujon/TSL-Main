@@ -1,0 +1,21 @@
+.hero-section {
+    background: url(../images/hero-bg.jpg) no-repeat center center / cover;
+    overflow: hidden;
+    
+    .hero-img-wrapper {
+        position: relative;
+    }
+
+    .clip-path {
+        max-width: 600px;
+        margin: 0 auto;
+
+        &.shape {
+            position: absolute;
+            top: 55%;
+            left: 55%;
+            transform: translate(-50%, -50%) rotate(15deg) scale(1.05);
+        }
+    }
+}
+

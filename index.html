@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Bootstrap npm starter</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="">
+                    <img src="assets/images/logo.jpg" alt="" class="img-fluid logo" />
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto p-4 p-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                            >
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Laboratory Services</a></li>
+                                <li><a class="dropdown-item" href="#">Food Safety & Quality Systems</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#"
+                                        >Thermal Process Evaluation, Development & Validation</a
+                                    >
+                                </li>
+                                <li><a class="dropdown-item" href="#">Research & Product Development</a></li>
+                                <li><a class="dropdown-item" href="#">Plant & Facilities Layout and Design</a></li>
+                                <li><a class="dropdown-item" href="#">Technical Training</a></li>
+                                <li><a class="dropdown-item" href="#">Audit and Assessment Services</a></li>
+                                <li><a class="dropdown-item" href="#">Export Market Access and Development</a></li>
+                                <li><a class="dropdown-item" href="#">COVID-19 Support</a></li>
+                                <li><a class="dropdown-item" href="#">COVID-19 Test Registration</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TSL CSI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About TSL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex">
+                    <form class="search-form d-flex ms-lg-5">
+                        <input
+                            id="searchInput"
+                            class="search-input form-control form-control-lg shadow-sm"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                            autofocus
+                        />
+                        <button class="search-btn btn" type="button">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent"
+                        aria-controls="navbarContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero-section py-6 py-md-8 overflow-hidden">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 g-4 g-lg-5 align-items-center">
+                    <div class="col">
+                        <div class="hero-content">
+                            <h1 class="text-uppercase display-3 text-primary mb-3">
+                                <span class="text-secondary">Science </span> Supporting <br />
+                                <span class="fw-light display-4">Your Business</span>
+                            </h1>
+                            <p class="lead pe-xl-10 mb-5">
+                                We Offer Quality Technical Services and a Dedication to Excellence. With Clients in the
+                                Americas, the Caribbean, Europe, Africa. Let us deliver for you.
+                            </p>
+                            <a href="#" class="btn btn-lg btn-primary px-5 py-3 text-uppercase fw-medium">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="hero-img-wrapper">
+                            <div class="clip-path shape"></div>
+                            <div class="clip-path" style="background-image: url(assets/images/hero-img.jpg)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section py-6 py-md-8">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-8 col-lg-6 mx-auto">
+                        <div class="section-header text-center">
+                            <h1 class="text-uppercase fw-bold text-primary">
+                                Our <span class="text-secondary">Services</span>
+                            </h1>
+                            <p class="lead">
+                                With Clients in the Caribbean, the Americas, the United Kingdom, Europe and Africa, the
+                                TSL Group of Companies provides:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 services">
+                    <div class="col service-card">
+                        <div class="service-card-inner">
+                            <div class="hexagon teal">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="50">
+                                        <path
+                                            d="M480 112c-44.18 0-80 35.82-80 80c0 32.84 19.81 60.98 48.11 73.31v78.7c0 57.25-50.25 104-112 104c-60 0-109.3-44.1-111.9-99.23C296.1 333.8 352 269.3 352 191.1V36.59c0-11.38-8.15-21.38-19.28-23.5L269.8 .4775c-13-2.625-25.54 5.766-28.16 18.77L238.4 34.99c-2.625 13 5.812 25.59 18.81 28.22l30.69 6.059L287.9 190.7c0 52.88-42.13 96.63-95.13 97.13c-53.38 .5-96.81-42.56-96.81-95.93L95.89 69.37l30.72-6.112c13-2.5 21.41-15.15 18.78-28.15L142.3 19.37c-2.5-13-15.15-21.41-28.15-18.78L51.28 12.99C40.15 15.24 32 25.09 32 36.59v155.4c0 77.25 55.11 142 128.1 156.8C162.7 439.3 240.6 512 336 512c97 0 176-75.37 176-168V265.3c28.23-12.36 48-40.46 48-73.25C560 147.8 524.2 112 480 112zM480 216c-13.25 0-24-10.75-24-24S466.7 168 480 168S504 178.7 504 192S493.3 216 480 216z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="fw-bold text-uppercase mb-3">Health & Wellness</h5>
+                                <p class="mb-4">
+                                    Our cutting-edge approach to research has created new business opportunities and
+                                    many successful new products for our clients
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase fw-medium px-4 py-2">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col service-card">
+                        <div class="service-card-inner">
+                            <div class="hexagon red">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="50">
+                                        <path
+                                            d="M128 32C145.7 32 160 46.33 160 64V215.4L316.6 131C332.6 122.4 352 134 352 152.2V215.4L508.6 131C524.6 122.4 544 134 544 152.2V432C544 458.5 522.5 480 496 480H80C53.49 480 32 458.5 32 432V64C32 46.33 46.33 32 64 32H128z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="fw-bold text-uppercase mb-3">Industry</h5>
+                                <p class="mb-4">
+                                    Our cutting-edge approach to research has created new business opportunities and
+                                    many successful new products for our clients
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase fw-medium px-4 py-2">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col service-card">
+                        <div class="service-card-inner">
+                            <div class="hexagon blue-dark">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="50">
+                                        <path
+                                            d="M352.4 243.8l-49.83 99.5c-6.009 12-23.41 11.62-28.92-.625L216.7 216.3l-30.05 71.75L88.55 288l176.4 182.2c12.66 13.07 33.36 13.07 46.03 0l176.4-182.2l-112.1 .0052L352.4 243.8zM495.2 62.86c-54.36-46.98-137.5-38.5-187.5 13.06L288 96.25L268.3 75.92C218.3 24.36 135.2 15.88 80.81 62.86C23.37 112.5 16.84 197.6 60.18 256h105l35.93-86.25c5.508-12.88 23.66-13.12 29.54-.375l58.21 129.4l49.07-98c5.884-11.75 22.78-11.75 28.67 0l27.67 55.25h121.5C559.2 197.6 552.6 112.5 495.2 62.86z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="fw-bold text-uppercase mb-3">Diagnostics</h5>
+                                <p class="mb-4">
+                                    Our cutting-edge approach to research has created new business opportunities and
+                                    many successful new products for our clients
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase fw-medium px-4 py-2">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col service-card">
+                        <div class="service-card-inner">
+                            <div class="hexagon purple">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50">
+                                        <path
+                                            d="M45.63 79.75L52 81.25v58.5C45 143.9 40 151.3 40 160c0 8.375 4.625 15.38 11.12 19.75L35.5 242C33.75 248.9 37.63 256 43.13 256h41.75c5.5 0 9.375-7.125 7.625-13.1L76.88 179.8C83.38 175.4 88 168.4 88 160c0-8.75-5-16.12-12-20.25V87.13L128 99.63l.001 60.37c0 70.75 57.25 128 128 128s127.1-57.25 127.1-128L384 99.62l82.25-19.87c18.25-4.375 18.25-27 0-31.5l-190.4-46c-13-3-26.62-3-39.63 0l-190.6 46C27.5 52.63 27.5 75.38 45.63 79.75zM359.2 312.8l-103.2 103.2l-103.2-103.2c-69.93 22.3-120.8 87.2-120.8 164.5C32 496.5 47.53 512 66.67 512h378.7C464.5 512 480 496.5 480 477.3C480 400 429.1 335.1 359.2 312.8z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="fw-bold text-uppercase mb-3">Education & Training</h5>
+                                <p class="mb-4">
+                                    Our cutting-edge approach to research has created new business opportunities and
+                                    many successful new products for our clients
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase fw-medium px-4 py-2">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col service-card">
+                        <div class="service-card-inner">
+                            <div class="hexagon orange">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                        <path
+                                            d="M256 224C238.4 224 223.1 238.4 223.1 256S238.4 288 256 288c17.63 0 32-14.38 32-32S273.6 224 256 224zM470.2 128c-10.88-19.5-40.51-50.75-116.3-41.88C332.4 34.88 299.6 0 256 0S179.6 34.88 158.1 86.12C82.34 77.38 52.71 108.5 41.83 128c-16.38 29.38-14.91 73.12 25.23 128c-40.13 54.88-41.61 98.63-25.23 128c29.13 52.38 101.6 43.63 116.3 41.88C179.6 477.1 212.4 512 256 512s76.39-34.88 97.9-86.13C368.5 427.6 441 436.4 470.2 384c16.38-29.38 14.91-73.13-25.23-128C485.1 201.1 486.5 157.4 470.2 128zM95.34 352c-4.001-7.25-.1251-24.75 15-48.25c6.876 6.5 14.13 12.87 21.88 19.12c1.625 13.75 4.001 27.13 6.751 40.13C114.3 363.9 99.09 358.6 95.34 352zM132.2 189.1C124.5 195.4 117.2 201.8 110.3 208.2C95.22 184.8 91.34 167.2 95.34 160c3.376-6.125 16.38-11.5 37.88-11.5c1.75 0 3.876 .375 5.751 .375C136.1 162.2 133.8 175.6 132.2 189.1zM256 64c9.502 0 22.25 13.5 33.88 37.25C278.6 105 267.4 109.3 256 114.1C244.6 109.3 233.4 105 222.1 101.2C233.7 77.5 246.5 64 256 64zM256 448c-9.502 0-22.25-13.5-33.88-37.25C233.4 407 244.6 402.7 256 397.9c11.38 4.875 22.63 9.135 33.88 12.89C278.3 434.5 265.5 448 256 448zM256 336c-44.13 0-80.02-35.88-80.02-80S211.9 176 256 176s80.02 35.88 80.02 80S300.1 336 256 336zM416.7 352c-3.626 6.625-19 11.88-43.63 11c2.751-12.1 5.126-26.38 6.751-40.13c7.752-6.25 15-12.63 21.88-19.12C416.8 327.2 420.7 344.8 416.7 352zM401.7 208.2c-6.876-6.5-14.13-12.87-21.88-19.12c-1.625-13.5-3.876-26.88-6.751-40.25c1.875 0 4.001-.375 5.751-.375c21.5 0 34.51 5.375 37.88 11.5C420.7 167.2 416.8 184.8 401.7 208.2z"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="content text-center">
+                                <h5 class="fw-bold text-uppercase mb-3">Audit Services</h5>
+                                <p class="mb-4">
+                                    Our cutting-edge approach to research has created new business opportunities and
+                                    many successful new products for our clients
+                                </p>
+                                <a href="#" class="btn btn-sm btn-outline-primary text-uppercase fw-medium px-4 py-2">
+                                    Learn more
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section bg-light py-6 py-md-8">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-2 g-5 align-items-center">
+                    <div class="col ps-xl-5 order-lg-2">
+                        <div class="content">
+                            <h1 class="text-uppercase display-3 text-primary mb-4">
+                                <span class="fw-light display-4">A Dedication to</span>
+                                <br />
+                                <span class="text-secondary">Excellence</span>
+                            </h1>
+                            <p class="lead">
+                                For over 23 years, Technological Solutions Limited's excellence in the application of
+                                science to the productive sector has transformed the Caribbean region's agribusiness
+                                sector.
+                            </p>
+                            <p class="lead mb-0">
+                                This was the brainchild of TSL's Chief Executive Officer, who pioneered the development
+                                of a centre devoted to the application of Food (and Related) Sciences to enhance food
+                                safety, quality and competitiveness in the Caribbean, and developing businesses trading
+                                in the global marketplace.
+                            </p>
+                            <div class="mb-5"></div>
+                            <a href="#" class="btn btn-lg btn-primary px-5 py-3 text-uppercase fw-medium">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col order-lg-1">
+                        <div class="info-img-wrapper row row-cols-2 justify-content-center">
+                            <div class="col">
+                                <div class="clip-path" style="background-image: url(assets/images/info/1.jpg)"></div>
+                            </div>
+                            <div class="col">
+                                <div class="clip-path" style="background-image: url(assets/images/info/2.jpg)"></div>
+                            </div>
+                            <div class="col negetive-margin">
+                                <div class="clip-path" style="background-image: url(assets/images/info/3.jpg)"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands-section py-6 py-md-8">
+            <div class="container">
+                <div class="row mb-4 mb-md-5">
+                    <div class="col-md-8 col-lg-6 mx-auto">
+                        <div class="section-header text-center">
+                            <h1 class="text-uppercase fw-bold text-primary">
+                                Our <span class="text-secondary">clients</span>
+                            </h1>
+                            <p class="lead">Over the decades, we are trusted & supported by many clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-3 row-cols-md-6 g-4 g-lg-5 align-items-center">
+                    <div class="col brand-item">
+                        <figure class="mb-0 text-center">
+                            <img src="assets/images/brands/1.png" alt="" class="img-fluid" />
+                        </figure>
+                    </div>
+                    <div class="col brand-item">
+                        <figure class="mb-0 text-center">
+                            <img src="assets/images/brands/2.png" alt="" class="img-fluid" />
+                        </figure>
+                    </div>
+                    <div class="col brand-item">
+                        <figure class="mb-0 text-center">
+                            <img src="assets/images/brands/3.png" alt="" class="img-fluid" />
+                        </figure>
+                    </div>
+                    <div class="col brand-item">
+                        <figure class="mb-0 text-center">
+                            <img src="assets/images/brands/4.png" alt="" class="img-fluid" />
+                        </figure>
+                    </div>
+                    <div class="col brand-item">
+                        <figure class="mb-0 text-center">
+                            <img src="assets/images/brands/5.png" alt="" class="img-fluid" />
+                        </figure>
+                    </div>
+                    <div class="col brand-item">
+                        <figure class="mb-0 text-center">
+                            <img src="assets/images/brands/6.png" alt="" class="img-fluid" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-light py-5 py-md-7">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 g-xl-5">
+                    <div class="col footer-widget text-center text-md-start mb-4 mb-md-0">
+                        <div class="widget-inner">
+                            <a href="#" class="mb-3 d-inline-block">
+                                <img src="assets/images/logo.png" alt="" class="img-fluid logo" />
+                            </a>
+                            <p class="copyright mb-4 text-muted">© 2021 Sandbox. All rights reserved.</p>
+                            <ul class="social list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                        <div class="hexagon-shape">
+                                            <svg viewBox="0 0 110.74 123.18">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-twitter"></i>
+                                        <div class="hexagon-shape">
+                                            <svg viewBox="0 0 110.74 123.18">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-linkedin"></i>
+                                        <div class="hexagon-shape">
+                                            <svg viewBox="0 0 110.74 123.18">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-youtube"></i>
+                                        <div class="hexagon-shape">
+                                            <svg viewBox="0 0 110.74 123.18">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col footer-widget">
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">Learn more</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#"> Contact Us </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Media </a>
+                                </li>
+                                <li>
+                                    <a href="#"> News </a>
+                                </li>
+                                <li>
+                                    <a href="#"> Privacy Policy </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col footer-widget">
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">Our locations</h6>
+                            <ul class="location-list list-unstyled mb-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>2A Kensington Crescent, Kingston</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>Island Village Main Street, Ocho Rios </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>Whitter Village, Unit Eg-2, Ironshore, Montego Bay</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span
+                                            >MagaMart, <br />
+                                            Waterloo
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col footer-widget">
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">Contact</h6>
+                            <ul class="quick-contact list-unstyled mb-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <span>(876) 818 0310</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <span>info@email.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
