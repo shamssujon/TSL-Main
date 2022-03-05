@@ -4,18 +4,19 @@
     
     .hero-img-wrapper {
         position: relative;
-    }
+        z-index: 1;
 
-    .clip-path {
-        max-width: 600px;
-        margin: 0 auto;
-
-        &.shape {
+        .hexagon-shape {
             position: absolute;
-            top: 55%;
-            left: 55%;
-            transform: translate(-50%, -50%) rotate(15deg) scale(1.05);
+            z-index: 1;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(10deg);
+            fill: transparent;
+            stroke: rgba($primary,.4);
+            stroke-width: 0.1px;
+            width: 100%;
+            height: 106.5%;
         }
     }
 }
-

@@ -1,27 +1,35 @@
-.info-section {
-    overflow: hidden;
-    
+.info-img-wrapper {
+    transform: rotate(180deg);
+
+    .hexagon-image-container {
+        transform: rotate(-149.5deg);
+    }
+
+    .mask-img {
+        transform: rotate(-30.5deg);
+    }
+
     .negetive-margin {
-        margin-top: -3.5rem;
+        margin-top: -1rem;
 
-        @include media-breakpoint-down (xxl) {
-            margin-top: -2.75rem;
+        @include media-breakpoint-down(xxl) {
+            margin-top: -.5rem;
         }
 
-        @include media-breakpoint-down (xl) {
-            margin-top: -2rem;
+        @include media-breakpoint-down(xl) {
+            margin-top: 0rem;
         }
 
-        @include media-breakpoint-down (lg) {
-            margin-top: -4rem;
-        }
-
-        @include media-breakpoint-down (md) {
-            margin-top: -2.5rem;
-        }
-
-        @include media-breakpoint-down (sm) {
+        @include media-breakpoint-down(lg) {
             margin-top: -1.25rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-top: -.5rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 0rem;
         }
     }
 }
