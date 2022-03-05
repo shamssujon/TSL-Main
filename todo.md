@@ -1,4 +1,4 @@
-+ ~~ Navabr ~~ 
++ <s>Navabr</s>
 + ~~ Service ~~
 + ~~ Hero ~~
 + ~~ Footer ~~
