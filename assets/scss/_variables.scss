@@ -6,6 +6,7 @@ $secondary: #ed001f;
 $font-family-base: "Inter", sans-serif;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
+$font-weight-bolder: 900;
 
 // Button+inputs
 $btn-font-weight: $font-weight-medium;
@@ -18,6 +19,7 @@ $btn-padding-y-lg: 1rem;
 $btn-padding-x-lg: 3rem;
 
 // Navbar
+$navbar-padding-y: 0;
 $navbar-nav-link-padding-x: 1rem;
 $navbar-light-color: rgba($primary, 0.8);
 $navbar-light-hover-color: rgba($primary, 1);
@@ -25,6 +27,9 @@ $navbar-light-active-color: rgba($secondary, 1);
 $navbar-light-toggler-border-color: transparent;
 $navbar-toggler-padding-y: 0.5rem;
 $navbar-toggler-padding-x: 0.5rem;
+
+$navbar-height: 100px;
+$navbar-height-sm: 80px;
 
 // Heading
 $headings-font-weight: 700;
@@ -34,3 +39,11 @@ $display-font-weight: 900;
 // Others
 $enable-shadows: false;
 $enable-negative-margins: true;
+
+$aspect-ratios: (
+    "1x1": 100%,
+    "3x2": calc(2 / 3 * 100%),
+    "4x3": calc(3 / 4 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%),
+);

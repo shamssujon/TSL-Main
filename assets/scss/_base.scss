@@ -1,32 +1,70 @@
 body {
     overflow-x: hidden;
+    padding-top: $navbar-height;
+
+    @include media-breakpoint-down(md) {
+        padding-top: $navbar-height-sm;
+    }
 }
 
+a {
+    transition: $transition-base;
+}
+
+// Button
 .btn {
     text-transform: uppercase;
 }
 
-.btn-corner-rounded {
-    border-top-left-radius: 1.25em;
-    border-bottom-right-radius: 1.25em;
+.btn-outline-primary {
+    background: rgba($primary, 0.1);
 }
 
+.btn-corner-rounded {
+    border-top-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+}
+
+@include media-breakpoint-down(lg) {
+    .btn-lg,
+    .btn-group-lg > .btn {
+        padding: 0.75rem 2.5rem;
+        font-size: $font-size-base;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .lead {
+        font-size: 1.125rem;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+// Hexagon image mask
 .hexagon-image-container {
     position: relative;
     z-index: 1;
+
+    .hexagon-outline-shape {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%) rotate(10deg);
+        fill: transparent;
+        stroke: rgba($primary, 0.4);
+        stroke-width: 0.2px;
+        width: 100%;
+        height: 106.5%;
+    }
 }
-.hexagon-shape {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) rotate(10deg);
-    fill: transparent;
-    stroke: rgba($primary, 0.4);
-    stroke-width: 0.2px;
-    width: 100%;
-    height: 106.5%;
-}
+
 .hexagon-mask-shape {
     position: relative;
     z-index: 1;
@@ -44,5 +82,56 @@ body {
         z-index: 1;
         max-width: 100%;
         object-fit: cover;
+    }
+}
+
+[data-aos="fade-up-sm"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: translate3d(0, 20px, 0) !important;
+
+        &.aos-animate {
+            transform: translate3d(0, 0, 0) !important;
+        }
+    }
+}
+
+[data-aos="fade-down-sm"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: translate3d(0, -20px, 0) !important;
+
+        &.aos-animate {
+            transform: translate3d(0, 0, 0) !important;
+        }
+    }
+}
+
+[data-aos="fade-left-sm"] {
+    opacity: 0;
+    transition-property: transform, opacity;
+
+    &.aos-animate {
+        opacity: 1;
+    }
+
+    @media screen and (min-width: 768px) {
+        transform: translate3d(20px, 0, 0) !important;
+
+        &.aos-animate {
+            transform: translate3d(0, 0, 0) !important;
+        }
     }
 }

@@ -6,6 +6,7 @@
 + <s>Info</s>
 + <s>Haxagon shape improvement</s>
 + <s>Button design improvement</s>
++ Blog/News
 + Info 2
 + Quote
 + Contact

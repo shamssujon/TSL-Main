@@ -1,7 +1,14 @@
-.navbar,
+.navbar {
+    height: $navbar-height;
+
+    @include media-breakpoint-down(md) {
+        height: $navbar-height-sm;
+    }
+}
+
 .navbar > .container {
-    align-items: stretch;
     position: relative;
+    height: 100%;
 }
 
 .navbar-brand {
@@ -17,6 +24,22 @@
 .navbar-toggler {
     &:focus {
         box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
+    }
+}
+
+.navbar-collapse {
+    @include media-breakpoint-up(lg) {
+        height: 100%;
+    }
+    @include media-breakpoint-down(lg) {
+        position: absolute;
+        top: 100%;
+        width: calc(100% - $container-padding-x * 2);
+        left: $container-padding-x;
+        background: rgba($white, 0.9);
+        box-shadow: $box-shadow-sm;
+        backdrop-filter: blur(8px);
+        z-index: 100;
     }
 }
 
@@ -38,8 +61,7 @@
     }
 
     .dropdown-menu {
-        margin-top: 0.5rem;
-
+        margin-top: 0;
         box-shadow: $box-shadow;
         border-width: 3px 0 0 0;
         border-color: $primary;
@@ -58,10 +80,14 @@
                 transform: translateY(0);
             }
         }
+
+        li + li {
+            border-top: 1px solid rgba($primary, 0.1);
+        }
     }
 
     .dropdown-item {
-        color: $primary;
+        // color: $primary;
         font-size: $font-size-base;
         white-space: normal;
         padding: 0.5rem 1.5rem;
@@ -74,21 +100,11 @@
     }
 }
 
-.navbar-collapse {
-    @include media-breakpoint-down(lg) {
-        position: absolute;
-        top: 100%;
-        width: calc(100% - $container-padding-x * 2);
-        left: $container-padding-x;
-        background: #fff;
-        z-index: 100;
-    }
-}
-
 .search-form {
     .search-btn {
         color: $primary;
         font-size: $font-size-lg;
+        padding: 0.5rem;
 
         &:focus {
             box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
@@ -98,7 +114,7 @@
     .search-input {
         font-size: $font-size-base;
         position: absolute;
-        top: calc(100% + $navbar-padding-y);
+        top: 100%;
         right: $container-padding-x;
         margin: auto;
         width: 300px;
@@ -116,3 +132,22 @@
         }
     }
 }
+
+
+.headroom {
+    will-change: transform opacity;
+    transition: $transition-base;
+    z-index: 99999;
+  }
+  .headroom--pinned {
+    transform: translateY(0%);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+  .headroom--unpinned {
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }

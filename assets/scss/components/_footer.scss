@@ -1,8 +1,3 @@
-.footer {
-    .copyright {
-    }
-}
-
 .footer-widget {
     ul {
         a {
@@ -10,7 +5,7 @@
             color: inherit;
             transition: $transition-base;
             display: block;
-            padding: .5rem 1rem;
+            padding: 0.5rem 1rem;
             margin-left: -1rem;
             border-radius: 4px;
             font-weight: 500;
@@ -24,6 +19,21 @@
     }
 
     .social {
+        .hexagon-shape {
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translate(-50%, -53%);
+
+            fill: transparent;
+            stroke: $primary;
+            stroke-width: 2px;
+            transition: $transition-base;
+        }
+
         a {
             color: $primary;
             position: relative;
@@ -41,34 +51,17 @@
             &:hover {
                 color: $white;
                 box-shadow: none;
+
                 .hexagon-shape {
-                    svg {
                         fill: $secondary;
                         stroke: $secondary;
-                    }
                 }
-            }
-        }
-
-        .hexagon-shape {
-            position: absolute;
-            z-index: -1;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            transform: translate(-50%, -55%);
-
-            svg {
-                fill: transparent;
-                stroke: $primary;
-                stroke-width: 2px;
-                transition: $transition-base;
             }
         }
     }
 
-    .location-list {
+    .location-list,
+    .quick-contact {
         a {
             display: flex;
             gap: 10px;
@@ -81,13 +74,7 @@
 
     .quick-contact {
         a {
-            display: flex;
             align-items: center;
-            gap: 10px;
-
-            i {
-                font-size: 1.25rem;
-            }
         }
     }
 }
