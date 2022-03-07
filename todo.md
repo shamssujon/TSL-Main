@@ -4,10 +4,8 @@
 + <s>Footer</s>
 + <s>Brand</s>
 + <s>Info</s>
++ <s>Info 2</s>
 + <s>Haxagon shape improvement</s>
 + <s>Button design improvement</s>
-+ Blog/News
-+ Info 2
-+ Quote
-+ Contact
-+ Animation
++ <s>Blog/News</s>
++ <s>Animation</s>
