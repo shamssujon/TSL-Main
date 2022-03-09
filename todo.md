@@ -9,3 +9,4 @@
 + <s>Button design improvement</s>
 + <s>Blog/News</s>
 + <s>Animation</s>
++ Diagnostics page
