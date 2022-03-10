@@ -14536,4 +14536,48 @@ a {
   align-items: center;
 }
 
+.page-header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1b7661;
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.corder-rounded-img-container {
+  position: relative;
+}
+.corder-rounded-img-container img, .corder-rounded-img-container::after {
+  border-radius: 0.5rem;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+}
+.corder-rounded-img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.corder-rounded-img-container::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 2px solid #1b7661;
+  z-index: 1;
+  position: absolute;
+  top: 1rem;
+  right: -1rem;
+}
+
 /*# sourceMappingURL=style.css.map */

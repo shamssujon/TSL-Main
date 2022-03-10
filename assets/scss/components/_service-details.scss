@@ -1,0 +1,30 @@
+.column-2 {
+	// column-count: 2;
+}
+
+.corder-rounded-img-container {
+    position: relative;
+	img,
+    &::after {
+		border-radius: 0.5rem;
+		border-top-left-radius: 4rem;
+		border-bottom-right-radius: 4rem;
+	}
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+	&::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		border: 2px solid $primary;
+		z-index: 1;
+		position: absolute;
+		top: 1rem;
+		right: -1rem;
+	}
+}
