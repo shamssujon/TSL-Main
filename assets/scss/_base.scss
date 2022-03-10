@@ -1,3 +1,7 @@
+html,body {
+    height: 100%;
+    min-height: 100vh;
+}
 body {
     overflow-x: hidden;
     padding-top: $navbar-height;
@@ -134,4 +138,8 @@ a {
             transform: translate3d(0, 0, 0) !important;
         }
     }
+}
+
+.main {
+    flex: 1;
 }
