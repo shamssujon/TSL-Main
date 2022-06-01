@@ -14580,4 +14580,50 @@ a {
   right: -1rem;
 }
 
+@media (min-width: 768px) {
+  .two-column-list {
+    column-count: 2;
+  }
+}
+
+.single-fact .hexagon {
+  width: 3rem;
+  height: 4.65rem;
+  border-radius: 8px;
+}
+.single-fact .hexagon .icon {
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+
+.team-item {
+  padding: 30px;
+  background: white;
+  height: 100%;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team-item h2, .team-item .h2 {
+  color: #1b7661;
+  transition: all 0.2s ease-in-out;
+}
+.team-item:hover {
+  box-shadow: 0 5px 20px -3px rgba(0, 0, 0, 0.15);
+}
+.team-item:hover h2, .team-item:hover .h2 {
+  color: #ed001f;
+}
+.team-item:hover .icon {
+  color: #ed001f;
+}
+.team-item .icon {
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

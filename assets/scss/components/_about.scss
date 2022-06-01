@@ -1,0 +1,53 @@
+.two-column-list {
+	@include media-breakpoint-up(md) {
+		column-count: 2;
+	}
+}
+
+.single-fact {
+	.hexagon {
+		width: 3rem;
+		height: 4.65rem;
+		border-radius: 8px;
+
+		.icon {
+			width: 3rem;
+			height: 3rem;
+			font-size: 2rem;
+		}
+	}
+}
+
+.team-item {
+	padding: 30px;
+	background: white;
+	height: 100%;
+	border: 1px solid #f5f5f5;
+	box-shadow: 0 3px 10px -5px rgba($black, 0.15);
+	position: relative;
+	transition: $transition-base;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	h2 {
+		color: $primary;
+        transition: $transition-base;
+	}
+
+	&:hover {
+		box-shadow: 0 5px 20px -3px rgba($black, 0.15);
+
+		h2 {
+			color: $secondary;
+		}
+
+		.icon {
+			color: $secondary;
+		}
+	}
+
+	.icon {
+		font-size: 2rem;
+	}
+}
