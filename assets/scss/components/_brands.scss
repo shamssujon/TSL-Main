@@ -1,7 +1,12 @@
 .brand-item {
-    img {
-        max-width: 100px;
-        max-height: 100px;
-        margin: auto;
-    }
+	img {
+		max-width: 100px;
+		max-height: 100px;
+		margin: auto;
+
+		@include media-breakpoint-down(lg) {
+			max-width: 80px;
+			max-height: 80px;
+		}
+	}
 }

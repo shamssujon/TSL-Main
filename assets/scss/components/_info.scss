@@ -3,6 +3,10 @@
 
     .hexagon-image-container {
         transform: rotate(-149.5deg);
+
+        .hexagon-outline-shape {
+            stroke-width: 0.15px;
+        }
     }
 
     .mask-img {
@@ -30,15 +34,6 @@
 
         @include media-breakpoint-down(sm) {
             margin-top: 0rem;
-        }
-    }
-}
-
-.award-list {
-    li {
-        i {
-            color: rgba($primary,.4);
-            margin-top: 1px;
         }
     }
 }
