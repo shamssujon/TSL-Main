@@ -1,0 +1,25 @@
+.contact-block {
+	.hexagon {
+		width: 3rem;
+		height: 4.65rem;
+		border-radius: 8px;
+		flex-shrink: 0;
+
+		.icon {
+			width: 3rem;
+			height: 3rem;
+			font-size: 2rem;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
