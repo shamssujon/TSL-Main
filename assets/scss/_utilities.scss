@@ -210,6 +210,19 @@ $utilities: map-merge(
             property: padding-left,
             class: ps,
             values: $spacers,
+        ),
+
+        // Shadows
+        "shadow": (
+            responsive: true,
+            property: box-shadow,
+            class: shadow,
+            values: (
+                null: $box-shadow,
+                light: $box-shadow-sm,
+                deep: $box-shadow-lg,
+                none: none,
+            )
         )
     )
 );

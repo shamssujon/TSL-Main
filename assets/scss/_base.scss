@@ -5,11 +5,6 @@ body {
 }
 body {
 	overflow-x: hidden;
-	padding-top: $navbar-height;
-
-	@include media-breakpoint-down(md) {
-		padding-top: $navbar-height-sm;
-	}
 }
 
 a {
