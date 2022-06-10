@@ -169,3 +169,20 @@ a {
 		}
 	}
 }
+
+[data-aos="fade-right-sm"] {
+	opacity: 0;
+	transition-property: transform, opacity;
+
+	&.aos-animate {
+		opacity: 1;
+	}
+
+	@media screen and (min-width: 768px) {
+		transform: translate3d(-20px, 0, 0) !important;
+
+		&.aos-animate {
+			transform: translate3d(0, 0, 0) !important;
+		}
+	}
+}
