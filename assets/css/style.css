@@ -14347,6 +14347,11 @@ a {
   font-size: 1.25rem;
   padding: 0.5rem;
 }
+@media (max-width: 1199.98px) {
+  .search-form .search-btn {
+    font-size: 1.5rem;
+  }
+}
 .search-form .search-btn:focus {
   box-shadow: 0 0 0 0.25rem rgba(27, 118, 97, 0.2);
 }

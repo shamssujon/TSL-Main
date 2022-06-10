@@ -182,6 +182,10 @@
 		font-size: $font-size-lg;
 		padding: 0.5rem;
 
+		@include media-breakpoint-down(xl) {
+			font-size: 1.5rem;
+		}
+
 		&:focus {
 			box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
 		}
