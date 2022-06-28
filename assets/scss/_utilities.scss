@@ -2,21 +2,6 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/utilities";
 
-$spacer: 1rem;
-$spacers: (
-    0: 0,
-    1: $spacer * 0.25,
-    2: $spacer * 0.5,
-    3: $spacer,
-    4: $spacer * 1.5,
-    5: $spacer * 2,
-    6: $spacer * 3,
-    7: $spacer * 4,
-    8: $spacer * 5,
-    9: $spacer * 6,
-    10: $spacer * 7,
-);
-
 $utilities: ();
 $utilities: map-merge(
     $utilities,
@@ -223,6 +208,13 @@ $utilities: map-merge(
                 deep: $box-shadow-lg,
                 none: none,
             )
-        )
+        ),
+
+        // Overflow
+        "overflow": (
+            property: overflow,
+            values: auto hidden visible scroll,
+            responsive: true,
+        ),
     )
 );
