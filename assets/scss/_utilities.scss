@@ -199,7 +199,6 @@ $utilities: map-merge(
 
         // Shadows
         "shadow": (
-            responsive: true,
             property: box-shadow,
             class: shadow,
             values: (
@@ -207,7 +206,9 @@ $utilities: map-merge(
                 light: $box-shadow-sm,
                 deep: $box-shadow-lg,
                 none: none,
-            )
+            ),
+            responsive: true,
+            state: hover
         ),
 
         // Overflow
