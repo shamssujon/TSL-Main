@@ -50,6 +50,11 @@ a {
     }
 }
 
+// Transition
+.transition {
+    transition: $transition-base;
+}
+
 // Hexagon image mask
 .hexagon-image-container {
     position: relative;

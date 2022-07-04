@@ -17321,6 +17321,10 @@ a {
     padding-right: 1rem;
   }
 }
+.transition {
+  transition: all 0.2s ease-in-out;
+}
+
 .hexagon-image-container {
   position: relative;
   z-index: 1;
@@ -18135,6 +18139,12 @@ a {
 .article-page-content p:not(:last-of-type) {
   margin-bottom: 1.5rem;
 }
+.article-page-content audio {
+  width: 100%;
+}
+.article-page-content audio:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
 
 .blog-sidebar .sidebar-widget:not(:last-child) {
   margin-bottom: 2.5rem;
@@ -18187,6 +18197,42 @@ a {
 .blog-sidebar .article-category-list a:hover {
   color: #fff;
   background: #1b7661;
+}
+
+.post-navigation .post-thumbnail {
+  width: 100px;
+  flex-shrink: 0;
+}
+@media (max-width: 1399.98px) {
+  .post-navigation .post-thumbnail {
+    width: 80px;
+  }
+}
+.post-navigation .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-navigation .article-title a {
+  text-decoration: none;
+}
+.post-navigation .article-published-date {
+  font-size: 0.875rem;
+  opacity: 0.8;
+  margin-bottom: 0;
+}
+
+.post-navigation-section .media-page-link {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+@media (max-width: 767.98px) {
+  .post-navigation-section .media-page-link {
+    margin-top: 2rem;
+  }
+}
+.post-navigation-section .media-page-link a {
+  display: inline-block;
 }
 
 .brand-item img {
