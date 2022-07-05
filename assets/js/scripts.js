@@ -100,7 +100,7 @@
         pagination: {
             el: ".swiper-pagination",
             type: "bullets",
-            clickable: true
+            clickable: true,
         },
         breakpoints: {
             320: {
@@ -149,5 +149,26 @@
 
     el.forEach((el) => {
         IO.observe(el);
+    });
+})();
+
+// Venobox - popup image
+(function () {
+    new VenoBox({
+        selector: ".image-popup",
+        numeration: false,
+        share: false,
+        spinner: "rotating-plane",
+    });
+})();
+
+// Venobox - popup gallery
+(function () {
+    new VenoBox({
+        selector: ".gallery-item",
+        numeration: true,
+        infinigall: true,
+        share: false,
+        spinner: "rotating-plane",
     });
 })();

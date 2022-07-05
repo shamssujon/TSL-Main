@@ -2437,7 +2437,7 @@ progress {
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
-  border-bottom-width: 2px;
+  border-bottom-width: 1px;
   box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 .table > tbody {
@@ -2447,7 +2447,7 @@ progress {
   vertical-align: bottom;
 }
 .table > :not(:first-child) {
-  border-top: 4px solid currentColor;
+  border-top: 2px solid currentColor;
 }
 
 .caption-top {
@@ -2459,10 +2459,10 @@ progress {
 }
 
 .table-bordered > :not(caption) > * {
-  border-width: 2px 0;
+  border-width: 1px 0;
 }
 .table-bordered > :not(caption) > * > * {
-  border-width: 0 2px;
+  border-width: 0 1px;
 }
 
 .table-borderless > :not(caption) > * > * {
@@ -18126,15 +18126,31 @@ a {
 .article-page-content {
   font-size: 18px;
 }
+.article-page-content h6,
+.article-page-content .h6,
+.article-page-content h5,
+.article-page-content .h5,
+.article-page-content h4,
+.article-page-content .h4,
+.article-page-content h3,
+.article-page-content .h3,
+.article-page-content h2,
+.article-page-content .h2,
+.article-page-content h1,
+.article-page-content .h1,
+.article-page-content ol,
+.article-page-content ul,
+.article-page-content dl,
+.article-page-content img,
+.article-page-content table,
+.article-page-content audio,
+.article-page-content video {
+  margin-bottom: 1.5rem;
+}
 .article-page-content p {
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-.article-page-content p:first-of-type::first-letter {
-  font-size: 3rem;
-  color: #1b7661;
-  font-weight: 500;
-  line-height: 1;
+  margin: 0;
 }
 .article-page-content p:not(:last-of-type) {
   margin-bottom: 1.5rem;
@@ -18142,8 +18158,16 @@ a {
 .article-page-content audio {
   width: 100%;
 }
-.article-page-content audio:not(:last-of-type) {
-  margin-bottom: 1rem;
+.article-page-content hr {
+  height: 1px;
+  margin: 2rem 0;
+}
+.article-page-content .image-popup {
+  display: block;
+  cursor: zoom-in;
+}
+.article-page-content .image-popup img {
+  margin: 0;
 }
 
 .blog-sidebar .sidebar-widget:not(:last-child) {
@@ -18233,6 +18257,71 @@ a {
 }
 .post-navigation-section .media-page-link a {
   display: inline-block;
+}
+
+.article-gallery .gallery-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.article-gallery .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article-tags .article-tag a {
+  display: block;
+  padding: 2px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+  opacity: 0.8;
+  border-bottom: 1px solid transparent;
+}
+.article-tags .article-tag a:hover {
+  color: #1b7661;
+  opacity: 1;
+  border-bottom-color: #1b7661;
+}
+.article-tags .article-tag:not(:last-of-type) a::after {
+  content: ",";
+}
+
+.article-share .hexagon-shape {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  fill: transparent;
+  stroke: #1b7661;
+  stroke-width: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.article-share a {
+  color: #1b7661;
+  position: relative;
+  z-index: 1;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+.article-share a:hover {
+  color: #fff;
+  box-shadow: none;
+}
+.article-share a:hover .hexagon-shape {
+  fill: #ed001f;
+  stroke: #ed001f;
 }
 
 .brand-item img {
