@@ -92,6 +92,12 @@ a {
         max-width: 100%;
         object-fit: cover;
     }
+
+    &.image-contain {
+        .mask-img {
+            object-fit: contain;
+        }
+    }
 }
 
 // Hexagon bullet list
@@ -195,18 +201,23 @@ a {
 // Swiper
 .swiper-button-next,
 .swiper-button-prev {
-    width: 70px;
-    height: 70px;
-	border-radius: 1000px;
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
-	color: $white;
-	background: rgba($primary,0.8);
+    color: $white;
+    background: rgba($primary, 0.8);
+    transition: $transition-base;
 
     &::after {
         font-family: "bootstrap-icons";
-		font-size: 2rem;
+        font-size: 2rem;
+    }
+
+    &.swiper-button-lock {
+        display: none;
     }
 }
 
@@ -223,14 +234,14 @@ a {
 }
 
 .swiper-pagination {
-	position: static;
-	margin-top: 10px;
-	
-	.swiper-pagination-bullet {
-		width: 10px;
-		height: 10px;
-		background: $primary;
-		margin: 0 5px !important;
-		transition: $transition-base;
-	}
+    position: static;
+    margin-top: 10px;
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: $primary;
+        margin: 0 5px !important;
+        transition: $transition-base;
+    }
 }

@@ -172,3 +172,36 @@
         spinner: "rotating-plane",
     });
 })();
+
+// Testimonial carousel
+(function () {
+    const testimonialCarousel = new Swiper(".testimonial-carousel", {
+        slidesPerView: 1.05,
+        spaceBetween: 20,
+        speed: 600,
+        watchOverflow: true,
+        pagination: {
+            el: ".testimonial-carousel-container .swiper-pagination",
+            type: "bullets",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.testimonial-carousel-container .swiper-button-next',
+            prevEl: '.testimonial-carousel-container .swiper-button-prev',
+          },
+        breakpoints: {
+            320: {
+                slidesPerView: 1.05,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        },
+    });
+})();
