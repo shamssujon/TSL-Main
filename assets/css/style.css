@@ -18440,6 +18440,10 @@ a {
   right: -1rem;
 }
 
+.service-details-card-top img {
+  object-fit: cover;
+}
+
 .single-fact {
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 0.15);
   transition: all 0.2s ease-in-out;
