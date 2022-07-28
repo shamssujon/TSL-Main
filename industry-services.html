@@ -51,7 +51,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -60,10 +60,26 @@
                                     Laboratory Services
                                 </a>
                             </li>
-                            <li>
-                                <a class="dropdown-item" href="industry-services.html">
-                                    Industry Services
-                                </a>
+                            <li class="dropdown d-flex flex-wrap nested-dropdown">
+                                <a class="dropdown-item" href="industry-services.html">Industry Services</a>
+                                <button type="button" class="dropdown-toggle dropdown-toggle-split"
+                                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <i class="bi bi-chevron-down"></i>
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu nested-dropdown-menu">
+                                    <a class="dropdown-item"
+                                        href="thermal-process-evaluation-development-validation.html">Thermal Process
+                                        Evaluation and Development</a>
+                                    <a class="dropdown-item" href="research-product-development.html">Research and
+                                        Development</a>
+                                    <a class="dropdown-item" href="food-safety-quality-systems.html">Food Safety and
+                                        Quality Systems</a>
+                                    <a class="dropdown-item" href="plant-facilities-layout-and-design.html">Plant
+                                        Facilities and Layout Design</a>
+                                    <a class="dropdown-item" href="export-market-access-and-development.html">Export
+                                        Market Access</a>
+                                </div>
                             </li>
                             <li>
                                 <a class="dropdown-item" href="diagnostics-services.html">
@@ -157,7 +173,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Commodi est sunt doloribus quas soluta assumenda.
                                 </p>
-                                <a href="#" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
+                                <a href="thermal-process-evaluation-development-validation.html" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
                                     Learn More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
@@ -176,7 +192,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Commodi est sunt doloribus quas soluta assumenda.
                                 </p>
-                                <a href="#" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
+                                <a href="research-product-development.html" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
                                     Learn More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
@@ -198,7 +214,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Commodi est sunt doloribus quas soluta assumenda.
                                 </p>
-                                <a href="#" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
+                                <a href="food-safety-quality-systems.html" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
                                     Learn More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
@@ -220,7 +236,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Commodi est sunt doloribus quas soluta assumenda.
                                 </p>
-                                <a href="#" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
+                                <a href="plant-facilities-layout-and-design.html" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
                                     Learn More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
@@ -239,7 +255,7 @@
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     Commodi est sunt doloribus quas soluta assumenda.
                                 </p>
-                                <a href="#" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
+                                <a href="export-market-access-and-development.html" class="btn btn-sm btn-outline-primary btn-corner-rounded stretched-link">
                                     Learn More
                                     <i class="bi bi-arrow-right"></i>
                                 </a>
