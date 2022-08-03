@@ -20,6 +20,13 @@
     headroom.init();
 })();
 
+// (function () {
+//     const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+//         target: "#team-list",
+//         rootMargin: "-40% 0px 0"
+//     });
+// })();
+
 // Animate on Scroll
 (function () {
     AOS.init({
@@ -186,9 +193,9 @@
             clickable: true,
         },
         navigation: {
-            nextEl: '.testimonial-carousel-container .swiper-button-next',
-            prevEl: '.testimonial-carousel-container .swiper-button-prev',
-          },
+            nextEl: ".testimonial-carousel-container .swiper-button-next",
+            prevEl: ".testimonial-carousel-container .swiper-button-prev",
+        },
         breakpoints: {
             320: {
                 slidesPerView: 1.05,

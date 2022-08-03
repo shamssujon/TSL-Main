@@ -1,0 +1,22 @@
+.team-list {
+    backdrop-filter: blur(4px);
+    .nav-link {
+        border: 1px solid $primary;
+        padding: 1rem 1.5rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: $font-size-lg;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+            background: $primary;
+            color: $white;
+        }
+
+        &.active {
+            box-shadow: $box-shadow;
+        }
+    }
+}
