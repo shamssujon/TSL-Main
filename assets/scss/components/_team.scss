@@ -20,3 +20,26 @@
         }
     }
 }
+
+.team-member-card {
+    transition: $transition-base;
+    
+    &-top {
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+            transform: none;
+            will-change: transform;
+            transition: $transition-base;
+        }
+    }
+
+    &:hover {
+        .team-member-card-top {
+            img {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
