@@ -18765,4 +18765,18 @@ a {
   transform: scale(1.05);
 }
 
+.search-result-filter-form label {
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .search-result-filter-form #show-result-quantity {
+    min-width: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .search-result-filter-form #short-by-selection {
+    min-width: 120px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
