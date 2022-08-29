@@ -59,6 +59,13 @@
             searchInput.classList.remove("open");
         }
     };
+
+    // This is a demo redirect to search result page. 
+    // It should be dynamic. remove after making functional search.
+    const searchBtn = document.getElementById("search-btn");
+    searchBtn.addEventListener("click", function() {
+        location.href = "./search-results.html";
+    })
 })();
 
 // Blog carousel
