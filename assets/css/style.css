@@ -17559,38 +17559,26 @@ a {
     padding: 0.5rem 0;
   }
 }
-.navbar .search-form .search-btn {
-  color: #1b7661;
-  font-size: 1.25rem;
-  padding: 0.5rem;
-}
-@media (max-width: 1199.98px) {
-  .navbar .search-form .search-btn {
-    font-size: 1.5rem;
-  }
-}
-.navbar .search-form .search-btn:focus {
-  box-shadow: 0 0 0 0.25rem rgba(27, 118, 97, 0.2);
-}
-.navbar .search-form .search-input {
-  font-size: 1rem;
+.navbar .navbar-search-form {
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
   margin: auto;
   width: 100%;
-  height: 60px;
+  z-index: 10;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.2s ease-in-out;
-  z-index: 10;
 }
-.navbar .search-form .search-input.open {
+.navbar .navbar-search-form.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+.navbar .search-toggler-btn {
+  font-size: 1.25rem;
 }
 
 .navbar > .container {

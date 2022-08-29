@@ -20,13 +20,6 @@
     headroom.init();
 })();
 
-// (function () {
-//     const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-//         target: "#team-list",
-//         rootMargin: "-40% 0px 0"
-//     });
-// })();
-
 // Animate on Scroll
 (function () {
     AOS.init({
@@ -39,11 +32,12 @@
 
 (function () {
     // Search form toggle
-    const searchBtn = document.querySelector(".search-btn");
-    const searchInput = document.querySelector(".search-input");
+    const searchTogglerBtn = document.getElementById("search-toggler-btn");
+    const searchForm = document.getElementById("navbar-search-form");
+    const searchInput = document.getElementById("search-input")
 
-    searchBtn.addEventListener("click", function () {
-        searchInput.classList.toggle("open");
+    searchTogglerBtn.addEventListener("click", function () {
+        searchForm.classList.toggle("open");
 
         setTimeout(function () {
             searchInput.focus();
@@ -52,10 +46,10 @@
 
     // Hide search form on click outside
     document.addEventListener("click", (e) => {
-        let el = e.target.closest(".search-btn");
-        let el2 = e.target.closest(".search-input");
+        let el = e.target.closest("#search-toggler-btn");
+        let el2 = e.target.closest("#navbar-search-form");
         if (el2 == null && el == null) {
-            searchInput.classList.remove("open");
+            searchForm.classList.remove("open");
         }
     });
 

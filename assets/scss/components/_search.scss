@@ -1,20 +1,13 @@
-.clear-input-btn {
-    // padding: 0;
-}
 .search-result-filter-form {
     label {
         white-space: nowrap;
     }
     #show-result-quantity {
-        // min-width: 100%;
-
         @include media-breakpoint-up(md) {
             min-width: 80px;
         }
     }
     #short-by-selection {
-        // min-width: 100%;
-
         @include media-breakpoint-up(md) {
             min-width: 120px;
         }

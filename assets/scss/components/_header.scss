@@ -6,42 +6,28 @@
         padding: 0.5rem 0;
     }
 
-    .search-form {
-        .search-btn {
-            color: $primary;
-            font-size: $font-size-lg;
-            padding: 0.5rem;
-
-            @include media-breakpoint-down(xl) {
-                font-size: 1.5rem;
-            }
-
-            &:focus {
-                box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
-            }
+    .navbar-search-form {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: $transition-base;
+        
+        &.open {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
         }
+    }
 
-        .search-input {
-            font-size: $font-size-base;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 100%;
-            height: 60px;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: $transition-base;
-            z-index: 10;
-
-            &.open {
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-        }
+    .search-toggler-btn {
+        font-size: $font-size-lg;
     }
 }
 
