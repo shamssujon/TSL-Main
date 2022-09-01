@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Technological Solutions Limited</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/aos.min.css" />
+        <link rel="stylesheet" href="assets/css/venobox.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body class="d-flex flex-column justify-content-between">
+        <!-- Header start -->
+        <nav class="navbar navbar-expand-xl navbar-light shadow shadow-xl-light fixed-top">
+            <div class="container gap-0 gap-xl-4">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid logo" />
+                </a>
+
+                <!-- Search form -->
+                <form
+                    action=""
+                    class="navbar-search-form rounded shadow-light border border-primary border-opacity-25"
+                    id="navbar-search-form"
+                >
+                    <div class="d-flex gap-2 bg-white p-2 rounded">
+                        <input
+                            type="search"
+                            name=""
+                            id="search-input"
+                            class="search-input form-control form-control-lg border-0"
+                            placeholder="Search by keywords"
+                        />
+                        <button
+                            title="Search"
+                            id="search-btn"
+                            class="search-btn btn btn-primary btn-lg py-2 px-4"
+                            type="button"
+                        >
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Buttons -->
+                <div class="d-flex align-items-center gap-2 order-xl-3">
+                    <!-- Search toggler button -->
+                    <button
+                        title="Toggle search"
+                        id="search-toggler-btn"
+                        class="search-toggler-btn btn btn-lg py-2 px-3 text-primary"
+                        type="button"
+                    >
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <!-- Navbar toggler button -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent"
+                        aria-controls="navbarContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <div class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto p-0 m-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                data-bs-auto-close="outside"
+                            >
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="laboratory-services.html">
+                                        Laboratory Services
+                                    </a>
+                                </li>
+                                <li class="dropdown d-flex flex-wrap nested-dropdown">
+                                    <a class="dropdown-item" href="industry-services.html"
+                                        >Industry Services</a
+                                    >
+                                    <button
+                                        type="button"
+                                        class="dropdown-toggle dropdown-toggle-split"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        data-bs-auto-close="outside"
+                                    >
+                                        <i class="bi bi-chevron-down"></i>
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu nested-dropdown-menu">
+                                        <a
+                                            class="dropdown-item"
+                                            href="thermal-process-evaluation-development-validation.html"
+                                            >Thermal Process Evaluation and Development</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="research-product-development.html"
+                                            >Research and Development</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="food-safety-quality-systems.html"
+                                            >Food Safety and Quality Systems</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="plant-facilities-layout-and-design.html"
+                                            >Plant Facilities and Layout Design</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="export-market-access-and-development.html"
+                                            >Export Market Access</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="diagnostics-services.html">
+                                        Diagnostics Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="education-training-services.html"
+                                    >
+                                        Education & Training
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="audit-services.html">
+                                        Audit Services
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TSL CSI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About TSL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header end -->
+
+        <!-- Main content start -->
+        <main class="main">
+            <!-- Hero start -->
+            <section
+                class="page-header py-9 py-md-13 overflow-hidden"
+                style="background-image: url(assets/images/search-bg.jpg)"
+            >
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-8">
+                            <div class="hero-content text-center">
+                                <h2 class="fw-light text-light mb-1" data-aos="fade-up-sm">
+                                    <span class="search-result-count fw-bold">0</span> search result
+                                    for: <span class="search-term fw-bold">Honululu</span>
+                                </h2>
+                                <form action="" class="search-form mt-5">
+                                    <div
+                                        class="d-flex gap-2 bg-white p-2 rounded shadow-light border border-primary"
+                                    >
+                                        <input
+                                            type="search"
+                                            name=""
+                                            id=""
+                                            class="search-input form-control form-control-lg border-0"
+                                            value="Honululu"
+                                            placeholder="Search by keywords"
+                                        />
+                                        <button
+                                            title="Search"
+                                            class="search-btn btn btn-primary btn-lg py-2 px-4"
+                                            type="button"
+                                        >
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Hero end -->
+
+            <!-- Search results - start -->
+            <section class="py-9 py-md-13">
+                <div class="container">
+                    <div class="no-reslts text-center">
+                        <img src="assets/images/search-no-result.svg" alt="" class="img-fluid mb-3">
+                        <h4>
+                            Oops!... no results found. 
+                        </h4>
+                        <p>Please try another search</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Search results - end -->
+        </main>
+        <!-- Main content end -->
+
+        <!-- Footer start -->
+        <footer class="footer bg-light py-5 py-lg-11">
+            <div class="container">
+                <div
+                    class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 g-xl-7 justify-content-center"
+                >
+                    <div
+                        class="col footer-widget text-center text-lg-start mb-4 mb-md-0"
+                        data-aos="fade-up-sm"
+                    >
+                        <div class="widget-inner">
+                            <a href="#" class="mb-3 d-inline-block">
+                                <img src="assets/images/logo.png" alt="" class="img-fluid logo" />
+                            </a>
+                            <p class="copyright mb-4 text-muted">
+                                © 2022 Technological Solutions Limited. All rights reserved.
+                            </p>
+                            <ul
+                                class="social list-unstyled d-flex justify-content-center justify-content-lg-start flex-wrap gap-2 mb-0"
+                            >
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-twitter"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-linkedin"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-youtube"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col footer-widget d-none d-lg-block"
+                        data-aos="fade-up-sm"
+                        data-aos-delay="150"
+                    >
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">
+                                Learn more
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a class="d-block" href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="media.html">Media</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="#">News</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col footer-widget d-none d-lg-block"
+                        data-aos="fade-up-sm"
+                        data-aos-delay="200"
+                    >
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">
+                                Our locations
+                            </h6>
+                            <ul class="list-with-icon location-list list-unstyled mb-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>2A Kensington Crescent, Kingston</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>Island Village Main Street, Ocho Rios</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>
+                                            Whitter Village, Unit Eg-2, Ironshore, Montego Bay
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>MagaMart, Waterloo</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col footer-widget d-none d-lg-block"
+                        data-aos="fade-up-sm"
+                        data-aos-delay="250"
+                    >
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">Contact</h6>
+                            <ul class="list-with-icon list-unstyled mb-0">
+                                <li>
+                                    <a href="callto:+18768180310">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <span>(876) 818 0310</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:biz.info@tsltech.com">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <span>biz.info@tsltech.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/aos.min.js"></script>
+        <script src="assets/js/headroom.min.js"></script>
+        <script src="assets/js/counterup2@2.0.2.js"></script>
+        <script src="assets/js/venobox.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
