@@ -39,7 +39,12 @@
                             class="search-input form-control form-control-lg border-0"
                             placeholder="Search by keywords"
                         />
-                        <button title="Search" id="search-btn" class="search-btn btn btn-primary btn-lg py-2 px-4" type="button">
+                        <button
+                            title="Search"
+                            id="search-btn"
+                            class="search-btn btn btn-primary btn-lg py-2 px-4"
+                            type="button"
+                        >
                             <i class="bi bi-search"></i>
                         </button>
                     </div>
@@ -48,7 +53,8 @@
                 <!-- Buttons -->
                 <div class="d-flex align-items-center gap-2 order-xl-3">
                     <!-- Search toggler button -->
-                    <button title="Toggle search"
+                    <button
+                        title="Toggle search"
                         id="search-toggler-btn"
                         class="search-toggler-btn btn btn-lg py-2 px-3 text-primary"
                         type="button"
@@ -562,27 +568,26 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Pagination -->
                     <div
                         class="post-pagination d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-4 mt-7"
                     >
-                        <a
-                            class="prev-post btn btn-sm btn-outline-primary btn-corner-rounded disabled"
+                        <ul
+                            class="d-flex align-items-center justify-content-center gap-2 m-0 p-0 list-unstyled flex-grow-1"
                         >
-                            <i class="bi bi-arrow-left"></i>
-                            Previous posts
-                        </a>
-                        <ul class="d-flex align-items-center gap-2 m-0 p-0 list-unstyled">
+                            <li>
+                                <a href="#" class="disabled"><i class="bi bi-chevron-left"></i></a>
+                            </li>
                             <li><a href="#" class="active">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">...</a></li>
                             <li><a href="#">123</a></li>
+                            <li>
+                                <a href="#"><i class="bi bi-chevron-right"></i></a>
+                            </li>
                         </ul>
-                        <a class="next-post btn btn-sm btn-outline-primary btn-corner-rounded">
-                            Next posts
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
                     </div>
                 </div>
             </section>

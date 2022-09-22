@@ -18150,6 +18150,10 @@ a {
   background: #1b7661;
   color: #fff;
 }
+.post-pagination ul a.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
 
 .resource-contact a {
   text-decoration: none;
