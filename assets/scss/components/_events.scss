@@ -1,3 +1,7 @@
+ul,
+ol {
+    margin: 0;
+}
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
     padding: 0;
 }
@@ -32,7 +36,9 @@
 
 .tribe-common .tribe-common-c-svgicon {
     color: $primary;
+    fill: $primary;
     transition: $transition-base;
+    opacity: 1;
 }
 
 // .tribe-common .tribe-common-b3 {
@@ -87,7 +93,8 @@ fieldset.tribe-filter-bar-c-filter__filters-fieldset {
     border-color: darken($primary, 10);
 }
 
-.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:focus, .tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:hover {
+.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:focus,
+.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:hover {
     background-color: lighten($primary, 70);
     border-color: $primary;
 }
@@ -102,4 +109,88 @@ fieldset.tribe-filter-bar-c-filter__filters-fieldset {
     color: $white !important;
     border: 1px solid $primary !important;
     background-color: $primary !important;
+}
+
+// Single event
+
+.content-area {
+    margin: 0;
+}
+
+.site-container,
+.site-header-row-layout-contained,
+.site-footer-row-layout-contained,
+.entry-hero-layout-contained,
+.alignfull > .wp-block-cover__inner-container,
+.alignwide > .wp-block-cover__inner-container {
+    padding: 0;
+}
+
+.entry-content-wrap {
+    padding: 0;
+}
+
+.tribe-events-event-image img {
+    width: 100%;
+}
+
+.tribe-events-content a {
+    border-bottom: 1px solid $primary;
+    color: $primary;
+    transition: $transition-base;
+}
+
+.tribe-events-content a:active,
+.tribe-events-content a:focus,
+.tribe-events-content a:hover {
+    border-bottom: 1px solid currentColor;
+    color: $secondary;
+}
+
+.tribe-common .tribe-common-c-btn-border,
+.tribe-common a.tribe-common-c-btn-border {
+    color: $primary;
+    display: inline-block;
+    width: auto;
+    background-color: var(--tec-color-background);
+    border: 1px solid $primary;
+    transition: $transition-base;
+}
+
+.tribe-events
+    .tribe-events-c-subscribe-dropdown
+    .tribe-events-c-subscribe-dropdown__button:focus-within,
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button:hover {
+    background-color: $primary;
+    color: $white;
+}
+
+.tribe-events
+    .tribe-events-c-subscribe-dropdown
+    .tribe-events-c-subscribe-dropdown__button:hover
+    svg {
+    fill: currentColor;
+    color: currentColor;
+}
+
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__content,
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__content {
+    position: absolute;
+    z-index: 100;
+}
+
+.tribe-events-meta-group a {
+    color: $primary;
+}
+.tribe-events-event-meta a,
+.tribe-events-event-meta a:visited {
+    color: $primary;
+}
+.tribe-events-event-meta a:focus,
+.tribe-events-event-meta a:hover {
+    color: $secondary;
+}
+
+.tribe-events-back a:hover {
+    color: $primary;
 }

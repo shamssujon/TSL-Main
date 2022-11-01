@@ -1,0 +1,2911 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Technological Solutions Limited</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- --------------------------------- -->
+
+        <div>
+            <link
+                rel="stylesheet"
+                id="tec-variables-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/variables-skeleton.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-common-skeleton-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-views-v2-bootstrap-datepicker-styles-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/vendor/bootstrap-datepicker/css/bootstrap-datepicker.standalone.min.css?ver=6.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-tooltipster-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/vendor/tooltipster/tooltipster.bundle.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-views-v2-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/css/views-skeleton.min.css?ver=6.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-views-v2-print-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/css/views-print.min.css?ver=6.0.0.1"
+                media="print"
+            />
+            <link
+                rel="stylesheet"
+                id="tec-variables-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/variables-full.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-common-full-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/common-full.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-views-v2-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/css/views-full.min.css?ver=6.0.0.1"
+                media="all"
+            />
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0"
+                id="jquery-core-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2"
+                id="jquery-migrate-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/js/tribe-common.min.js?ver=5.0.0.1"
+                id="tribe-common-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/accordion.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-accordion-js"
+            ></script>
+            <script id="tribe-events-filterbar-views-filter-bar-state-js-js-extra">
+                var tribe_events_filter_bar_js_config = {
+                    events: { currency_symbol: "$", reverse_currency_position: false },
+                    l10n: {
+                        show_filters: "Show filters",
+                        hide_filters: "Hide filters",
+                        cost_range_currency_symbol_before:
+                            "<%- currency_symbol %><%- cost_low %> - <%- currency_symbol %><%- cost_high %>",
+                        cost_range_currency_symbol_after:
+                            "<%- cost_low %><%- currency_symbol %> - <%- cost_high %><%- currency_symbol %>",
+                    },
+                };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-bar-state.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-bar-state-js-js"
+            ></script>
+            <link
+                rel="stylesheet"
+                id="tribe-events-filterbar-views-v2-print-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/css/views-print.min.css?ver=5.4.0"
+                media="print"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-pro-views-v2-print-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/views-print.min.css?ver=6.0.0"
+                media="print"
+            />
+            <meta name="robots" content="max-image-preview:large" />
+            <link rel="dns-prefetch" href="//connect.facebook.net" />
+            <link rel="dns-prefetch" href="//s.w.org" />
+            <link
+                rel="alternate"
+                type="application/rss+xml"
+                title="The Events Calendar Demo &raquo; Feed"
+                href="https://demo.theeventscalendar.com/feed/"
+            />
+            <link
+                rel="alternate"
+                type="application/rss+xml"
+                title="The Events Calendar Demo &raquo; Comments Feed"
+                href="https://demo.theeventscalendar.com/comments/feed/"
+            />
+            <link
+                rel="alternate"
+                type="text/calendar"
+                title="The Events Calendar Demo &raquo; iCal Feed"
+                href="https://demo.theeventscalendar.com?ical=1"
+            />
+            <script>
+                document.documentElement.classList.remove("no-js");
+            </script>
+            <script>
+                window._wpemojiSettings = {
+                    baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+                    ext: ".png",
+                    svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
+                    svgExt: ".svg",
+                    source: {
+                        concatemoji:
+                            "https:\/\/demo.theeventscalendar.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2",
+                    },
+                };
+                /*! This file is auto-generated */
+                !(function (e, a, t) {
+                    var n,
+                        r,
+                        o,
+                        i = a.createElement("canvas"),
+                        p = i.getContext && i.getContext("2d");
+                    function s(e, t) {
+                        var a = String.fromCharCode,
+                            e =
+                                (p.clearRect(0, 0, i.width, i.height),
+                                p.fillText(a.apply(this, e), 0, 0),
+                                i.toDataURL());
+                        return (
+                            p.clearRect(0, 0, i.width, i.height),
+                            p.fillText(a.apply(this, t), 0, 0),
+                            e === i.toDataURL()
+                        );
+                    }
+                    function c(e) {
+                        var t = a.createElement("script");
+                        (t.src = e),
+                            (t.defer = t.type = "text/javascript"),
+                            a.getElementsByTagName("head")[0].appendChild(t);
+                    }
+                    for (
+                        o = Array("flag", "emoji"),
+                            t.supports = { everything: !0, everythingExceptFlag: !0 },
+                            r = 0;
+                        r < o.length;
+                        r++
+                    )
+                        (t.supports[o[r]] = (function (e) {
+                            if (!p || !p.fillText) return !1;
+                            switch (((p.textBaseline = "top"), (p.font = "600 32px Arial"), e)) {
+                                case "flag":
+                                    return s(
+                                        [127987, 65039, 8205, 9895, 65039],
+                                        [127987, 65039, 8203, 9895, 65039]
+                                    )
+                                        ? !1
+                                        : !s(
+                                              [55356, 56826, 55356, 56819],
+                                              [55356, 56826, 8203, 55356, 56819]
+                                          ) &&
+                                              !s(
+                                                  [
+                                                      55356, 57332, 56128, 56423, 56128, 56418,
+                                                      56128, 56421, 56128, 56430, 56128, 56423,
+                                                      56128, 56447,
+                                                  ],
+                                                  [
+                                                      55356, 57332, 8203, 56128, 56423, 8203, 56128,
+                                                      56418, 8203, 56128, 56421, 8203, 56128, 56430,
+                                                      8203, 56128, 56423, 8203, 56128, 56447,
+                                                  ]
+                                              );
+                                case "emoji":
+                                    return !s(
+                                        [129777, 127995, 8205, 129778, 127999],
+                                        [129777, 127995, 8203, 129778, 127999]
+                                    );
+                            }
+                            return !1;
+                        })(o[r])),
+                            (t.supports.everything = t.supports.everything && t.supports[o[r]]),
+                            "flag" !== o[r] &&
+                                (t.supports.everythingExceptFlag =
+                                    t.supports.everythingExceptFlag && t.supports[o[r]]);
+                    (t.supports.everythingExceptFlag =
+                        t.supports.everythingExceptFlag && !t.supports.flag),
+                        (t.DOMReady = !1),
+                        (t.readyCallback = function () {
+                            t.DOMReady = !0;
+                        }),
+                        t.supports.everything ||
+                            ((n = function () {
+                                t.readyCallback();
+                            }),
+                            a.addEventListener
+                                ? (a.addEventListener("DOMContentLoaded", n, !1),
+                                  e.addEventListener("load", n, !1))
+                                : (e.attachEvent("onload", n),
+                                  a.attachEvent("onreadystatechange", function () {
+                                      "complete" === a.readyState && t.readyCallback();
+                                  })),
+                            (e = t.source || {}).concatemoji
+                                ? c(e.concatemoji)
+                                : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)));
+                })(window, document, window._wpemojiSettings);
+            </script>
+            <style>
+                img.wp-smiley,
+                img.emoji {
+                    display: inline !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                    height: 1em !important;
+                    width: 1em !important;
+                    margin: 0 0.07em !important;
+                    vertical-align: -0.1em !important;
+                    background: none !important;
+                    padding: 0 !important;
+                }
+            </style>
+            <link
+                rel="stylesheet"
+                id="tribe-events-full-pro-calendar-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/tribe-events-pro-full.min.css?ver=6.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="dashicons-css"
+                href="https://demo.theeventscalendar.com/wp-includes/css/dashicons.min.css?ver=6.0.2"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="event-tickets-plus-tickets-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets-plus/src/resources/css/tickets.min.css?ver=5.6.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-virtual-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-virtual/src/resources/css/events-virtual-skeleton.min.css?ver=1.13.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-virtual-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-virtual/src/resources/css/events-virtual-full.min.css?ver=1.13.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-virtual-single-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-virtual/src/resources/css/events-virtual-single-skeleton.min.css?ver=1.13.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-virtual-single-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-virtual/src/resources/css/events-virtual-single-full.min.css?ver=1.13.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tec-events-pro-single-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/events-single.min.css?ver=6.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-select2-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/vendor/tribe-selectWoo/dist/css/selectWoo.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-dependency-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/dependency.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-bumpdown-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/bumpdown.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-buttonset-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/buttonset.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-common-admin-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/css/tribe-common-admin.min.css?ver=5.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-filterbar-mobile-styles-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/css/filter-view-mobile.min.css?ver=5.4.0"
+                media="only screen and (max-width: 768px)"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-pro-mini-calendar-block-styles-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/tribe-events-pro-mini-calendar-block.min.css?ver=6.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-custom-jquery-styles-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/vendor/jquery/smoothness/jquery-ui-1.8.23.custom.css?ver=6.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-filterbar-views-v2-1-filter-bar-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/css/views-filter-bar-skeleton.min.css?ver=5.4.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-filterbar-views-v2-1-filter-bar-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/css/views-filter-bar-full.min.css?ver=5.4.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="event-tickets-tickets-rsvp-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/css/rsvp-v1.min.css?ver=5.5.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="event-tickets-tickets-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/css/tickets.min.css?ver=5.5.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-filterbar-styles-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/css/filter-view.min.css?ver=5.4.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-v2-virtual-single-block-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-virtual/src/resources/css/events-virtual-single-block.min.css?ver=1.13.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-v2-single-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/css/tribe-events-single-skeleton.min.css?ver=6.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-v2-single-skeleton-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/css/tribe-events-single-full.min.css?ver=6.0.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tec-events-pro-single-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/custom-tables-v1/single.min.css?ver=6.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="wp-block-library-css"
+                href="https://demo.theeventscalendar.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.2"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="wc-blocks-vendors-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=8.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="wc-blocks-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-style.css?ver=8.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-v2-single-blocks-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/css/tribe-events-single-blocks.min.css?ver=6.0.0.1"
+                media="all"
+            />
+            <style id="global-styles-inline-css">
+                body {
+                    --wp--preset--color--black: #000000;
+                    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+                    --wp--preset--color--white: #ffffff;
+                    --wp--preset--color--pale-pink: #f78da7;
+                    --wp--preset--color--vivid-red: #cf2e2e;
+                    --wp--preset--color--luminous-vivid-orange: #ff6900;
+                    --wp--preset--color--luminous-vivid-amber: #fcb900;
+                    --wp--preset--color--light-green-cyan: #7bdcb5;
+                    --wp--preset--color--vivid-green-cyan: #00d084;
+                    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+                    --wp--preset--color--vivid-cyan-blue: #0693e3;
+                    --wp--preset--color--vivid-purple: #9b51e0;
+                    --wp--preset--color--theme-palette-1: #334aff;
+                    --wp--preset--color--theme-palette-2: #263ad0;
+                    --wp--preset--color--theme-palette-3: #1a202c;
+                    --wp--preset--color--theme-palette-4: #2d3748;
+                    --wp--preset--color--theme-palette-5: #4a5568;
+                    --wp--preset--color--theme-palette-6: #718096;
+                    --wp--preset--color--theme-palette-7: #edf2f7;
+                    --wp--preset--color--theme-palette-8: #f7fafc;
+                    --wp--preset--color--theme-palette-9: #ffffff;
+                    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+                        135deg,
+                        rgba(6, 147, 227, 1) 0%,
+                        rgb(155, 81, 224) 100%
+                    );
+                    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+                        135deg,
+                        rgb(122, 220, 180) 0%,
+                        rgb(0, 208, 130) 100%
+                    );
+                    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+                        135deg,
+                        rgba(252, 185, 0, 1) 0%,
+                        rgba(255, 105, 0, 1) 100%
+                    );
+                    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+                        135deg,
+                        rgba(255, 105, 0, 1) 0%,
+                        rgb(207, 46, 46) 100%
+                    );
+                    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+                        135deg,
+                        rgb(238, 238, 238) 0%,
+                        rgb(169, 184, 195) 100%
+                    );
+                    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+                        135deg,
+                        rgb(74, 234, 220) 0%,
+                        rgb(151, 120, 209) 20%,
+                        rgb(207, 42, 186) 40%,
+                        rgb(238, 44, 130) 60%,
+                        rgb(251, 105, 98) 80%,
+                        rgb(254, 248, 76) 100%
+                    );
+                    --wp--preset--gradient--blush-light-purple: linear-gradient(
+                        135deg,
+                        rgb(255, 206, 236) 0%,
+                        rgb(152, 150, 240) 100%
+                    );
+                    --wp--preset--gradient--blush-bordeaux: linear-gradient(
+                        135deg,
+                        rgb(254, 205, 165) 0%,
+                        rgb(254, 45, 45) 50%,
+                        rgb(107, 0, 62) 100%
+                    );
+                    --wp--preset--gradient--luminous-dusk: linear-gradient(
+                        135deg,
+                        rgb(255, 203, 112) 0%,
+                        rgb(199, 81, 192) 50%,
+                        rgb(65, 88, 208) 100%
+                    );
+                    --wp--preset--gradient--pale-ocean: linear-gradient(
+                        135deg,
+                        rgb(255, 245, 203) 0%,
+                        rgb(182, 227, 212) 50%,
+                        rgb(51, 167, 181) 100%
+                    );
+                    --wp--preset--gradient--electric-grass: linear-gradient(
+                        135deg,
+                        rgb(202, 248, 128) 0%,
+                        rgb(113, 206, 126) 100%
+                    );
+                    --wp--preset--gradient--midnight: linear-gradient(
+                        135deg,
+                        rgb(2, 3, 129) 0%,
+                        rgb(40, 116, 252) 100%
+                    );
+                    --wp--preset--duotone--dark-grayscale: url("#wp-duotone-dark-grayscale");
+                    --wp--preset--duotone--grayscale: url("#wp-duotone-grayscale");
+                    --wp--preset--duotone--purple-yellow: url("#wp-duotone-purple-yellow");
+                    --wp--preset--duotone--blue-red: url("#wp-duotone-blue-red");
+                    --wp--preset--duotone--midnight: url("#wp-duotone-midnight");
+                    --wp--preset--duotone--magenta-yellow: url("#wp-duotone-magenta-yellow");
+                    --wp--preset--duotone--purple-green: url("#wp-duotone-purple-green");
+                    --wp--preset--duotone--blue-orange: url("#wp-duotone-blue-orange");
+                    --wp--preset--font-size--small: 14px;
+                    --wp--preset--font-size--medium: 24px;
+                    --wp--preset--font-size--large: 32px;
+                    --wp--preset--font-size--x-large: 42px;
+                    --wp--preset--font-size--larger: 40px;
+                }
+                .has-black-color {
+                    color: var(--wp--preset--color--black) !important;
+                }
+                .has-cyan-bluish-gray-color {
+                    color: var(--wp--preset--color--cyan-bluish-gray) !important;
+                }
+                .has-white-color {
+                    color: var(--wp--preset--color--white) !important;
+                }
+                .has-pale-pink-color {
+                    color: var(--wp--preset--color--pale-pink) !important;
+                }
+                .has-vivid-red-color {
+                    color: var(--wp--preset--color--vivid-red) !important;
+                }
+                .has-luminous-vivid-orange-color {
+                    color: var(--wp--preset--color--luminous-vivid-orange) !important;
+                }
+                .has-luminous-vivid-amber-color {
+                    color: var(--wp--preset--color--luminous-vivid-amber) !important;
+                }
+                .has-light-green-cyan-color {
+                    color: var(--wp--preset--color--light-green-cyan) !important;
+                }
+                .has-vivid-green-cyan-color {
+                    color: var(--wp--preset--color--vivid-green-cyan) !important;
+                }
+                .has-pale-cyan-blue-color {
+                    color: var(--wp--preset--color--pale-cyan-blue) !important;
+                }
+                .has-vivid-cyan-blue-color {
+                    color: var(--wp--preset--color--vivid-cyan-blue) !important;
+                }
+                .has-vivid-purple-color {
+                    color: var(--wp--preset--color--vivid-purple) !important;
+                }
+                .has-black-background-color {
+                    background-color: var(--wp--preset--color--black) !important;
+                }
+                .has-cyan-bluish-gray-background-color {
+                    background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+                }
+                .has-white-background-color {
+                    background-color: var(--wp--preset--color--white) !important;
+                }
+                .has-pale-pink-background-color {
+                    background-color: var(--wp--preset--color--pale-pink) !important;
+                }
+                .has-vivid-red-background-color {
+                    background-color: var(--wp--preset--color--vivid-red) !important;
+                }
+                .has-luminous-vivid-orange-background-color {
+                    background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+                }
+                .has-luminous-vivid-amber-background-color {
+                    background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+                }
+                .has-light-green-cyan-background-color {
+                    background-color: var(--wp--preset--color--light-green-cyan) !important;
+                }
+                .has-vivid-green-cyan-background-color {
+                    background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+                }
+                .has-pale-cyan-blue-background-color {
+                    background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+                }
+                .has-vivid-cyan-blue-background-color {
+                    background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+                }
+                .has-vivid-purple-background-color {
+                    background-color: var(--wp--preset--color--vivid-purple) !important;
+                }
+                .has-black-border-color {
+                    border-color: var(--wp--preset--color--black) !important;
+                }
+                .has-cyan-bluish-gray-border-color {
+                    border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+                }
+                .has-white-border-color {
+                    border-color: var(--wp--preset--color--white) !important;
+                }
+                .has-pale-pink-border-color {
+                    border-color: var(--wp--preset--color--pale-pink) !important;
+                }
+                .has-vivid-red-border-color {
+                    border-color: var(--wp--preset--color--vivid-red) !important;
+                }
+                .has-luminous-vivid-orange-border-color {
+                    border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+                }
+                .has-luminous-vivid-amber-border-color {
+                    border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+                }
+                .has-light-green-cyan-border-color {
+                    border-color: var(--wp--preset--color--light-green-cyan) !important;
+                }
+                .has-vivid-green-cyan-border-color {
+                    border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+                }
+                .has-pale-cyan-blue-border-color {
+                    border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+                }
+                .has-vivid-cyan-blue-border-color {
+                    border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+                }
+                .has-vivid-purple-border-color {
+                    border-color: var(--wp--preset--color--vivid-purple) !important;
+                }
+                .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+                    background: var(
+                        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+                    ) !important;
+                }
+                .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+                    background: var(
+                        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+                    ) !important;
+                }
+                .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+                    background: var(
+                        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+                    ) !important;
+                }
+                .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+                    background: var(
+                        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+                    ) !important;
+                }
+                .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+                    background: var(
+                        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+                    ) !important;
+                }
+                .has-cool-to-warm-spectrum-gradient-background {
+                    background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+                }
+                .has-blush-light-purple-gradient-background {
+                    background: var(--wp--preset--gradient--blush-light-purple) !important;
+                }
+                .has-blush-bordeaux-gradient-background {
+                    background: var(--wp--preset--gradient--blush-bordeaux) !important;
+                }
+                .has-luminous-dusk-gradient-background {
+                    background: var(--wp--preset--gradient--luminous-dusk) !important;
+                }
+                .has-pale-ocean-gradient-background {
+                    background: var(--wp--preset--gradient--pale-ocean) !important;
+                }
+                .has-electric-grass-gradient-background {
+                    background: var(--wp--preset--gradient--electric-grass) !important;
+                }
+                .has-midnight-gradient-background {
+                    background: var(--wp--preset--gradient--midnight) !important;
+                }
+                .has-small-font-size {
+                    font-size: var(--wp--preset--font-size--small) !important;
+                }
+                .has-medium-font-size {
+                    font-size: var(--wp--preset--font-size--medium) !important;
+                }
+                .has-large-font-size {
+                    font-size: var(--wp--preset--font-size--large) !important;
+                }
+                .has-x-large-font-size {
+                    font-size: var(--wp--preset--font-size--x-large) !important;
+                }
+            </style>
+            <style id="woocommerce-inline-inline-css">
+                .woocommerce form .form-row .required {
+                    visibility: visible;
+                }
+            </style>
+            <link
+                rel="stylesheet"
+                id="events-community-tickets-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-community-events-tickets/src/resources/css/events-community-tickets.min.css?ver=4.8.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-demo-site-theme-style-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence-demo-site-theme/style.css?ver=1.0.12"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-global-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/global.min.css?ver=1.1.27"
+                media="all"
+            />
+            <style id="kadence-global-inline-css">
+                /* Kadence Base CSS */
+                :root {
+                    --global-palette1: #334aff;
+                    --global-palette2: #263ad0;
+                    --global-palette3: #1a202c;
+                    --global-palette4: #2d3748;
+                    --global-palette5: #4a5568;
+                    --global-palette6: #718096;
+                    --global-palette7: #edf2f7;
+                    --global-palette8: #f7fafc;
+                    --global-palette9: #ffffff;
+                    --global-palette9rgb: 255, 255, 255;
+                    --global-palette-highlight: var(--global-palette1);
+                    --global-palette-highlight-alt: var(--global-palette2);
+                    --global-palette-highlight-alt2: var(--global-palette9);
+                    --global-palette-btn-bg: var(--global-palette1);
+                    --global-palette-btn-bg-hover: var(--global-palette2);
+                    --global-palette-btn: var(--global-palette9);
+                    --global-palette-btn-hover: var(--global-palette9);
+                    --global-body-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
+                        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                    --global-heading-font-family: inherit;
+                    --global-primary-nav-font-family: inherit;
+                    --global-fallback-font: sans-serif;
+                    --global-display-fallback-font: sans-serif;
+                    --global-content-width: 1290px;
+                    --global-content-narrow-width: 1290px;
+                    --global-content-edge-padding: 1.5rem;
+                    --global-calc-content-width: calc(
+                        1290px - var(--global-content-edge-padding) -
+                            var(--global-content-edge-padding)
+                    );
+                }
+                .wp-site-blocks {
+                    --global-vw: calc(100vw - (0.5 * var(--scrollbar-offset)));
+                }
+                :root .has-theme-palette-1-background-color {
+                    background-color: var(--global-palette1);
+                }
+                :root .has-theme-palette-1-color {
+                    color: var(--global-palette1);
+                }
+                :root .has-theme-palette-2-background-color {
+                    background-color: var(--global-palette2);
+                }
+                :root .has-theme-palette-2-color {
+                    color: var(--global-palette2);
+                }
+                :root .has-theme-palette-3-background-color {
+                    background-color: var(--global-palette3);
+                }
+                :root .has-theme-palette-3-color {
+                    color: var(--global-palette3);
+                }
+                :root .has-theme-palette-4-background-color {
+                    background-color: var(--global-palette4);
+                }
+                :root .has-theme-palette-4-color {
+                    color: var(--global-palette4);
+                }
+                :root .has-theme-palette-5-background-color {
+                    background-color: var(--global-palette5);
+                }
+                :root .has-theme-palette-5-color {
+                    color: var(--global-palette5);
+                }
+                :root .has-theme-palette-6-background-color {
+                    background-color: var(--global-palette6);
+                }
+                :root .has-theme-palette-6-color {
+                    color: var(--global-palette6);
+                }
+                :root .has-theme-palette-7-background-color {
+                    background-color: var(--global-palette7);
+                }
+                :root .has-theme-palette-7-color {
+                    color: var(--global-palette7);
+                }
+                :root .has-theme-palette-8-background-color {
+                    background-color: var(--global-palette8);
+                }
+                :root .has-theme-palette-8-color {
+                    color: var(--global-palette8);
+                }
+                :root .has-theme-palette-9-background-color {
+                    background-color: var(--global-palette9);
+                }
+                :root .has-theme-palette-9-color {
+                    color: var(--global-palette9);
+                }
+                :root .has-theme-palette1-background-color {
+                    background-color: var(--global-palette1);
+                }
+                :root .has-theme-palette1-color {
+                    color: var(--global-palette1);
+                }
+                :root .has-theme-palette2-background-color {
+                    background-color: var(--global-palette2);
+                }
+                :root .has-theme-palette2-color {
+                    color: var(--global-palette2);
+                }
+                :root .has-theme-palette3-background-color {
+                    background-color: var(--global-palette3);
+                }
+                :root .has-theme-palette3-color {
+                    color: var(--global-palette3);
+                }
+                :root .has-theme-palette4-background-color {
+                    background-color: var(--global-palette4);
+                }
+                :root .has-theme-palette4-color {
+                    color: var(--global-palette4);
+                }
+                :root .has-theme-palette5-background-color {
+                    background-color: var(--global-palette5);
+                }
+                :root .has-theme-palette5-color {
+                    color: var(--global-palette5);
+                }
+                :root .has-theme-palette6-background-color {
+                    background-color: var(--global-palette6);
+                }
+                :root .has-theme-palette6-color {
+                    color: var(--global-palette6);
+                }
+                :root .has-theme-palette7-background-color {
+                    background-color: var(--global-palette7);
+                }
+                :root .has-theme-palette7-color {
+                    color: var(--global-palette7);
+                }
+                :root .has-theme-palette8-background-color {
+                    background-color: var(--global-palette8);
+                }
+                :root .has-theme-palette8-color {
+                    color: var(--global-palette8);
+                }
+                :root .has-theme-palette9-background-color {
+                    background-color: var(--global-palette9);
+                }
+                :root .has-theme-palette9-color {
+                    color: var(--global-palette9);
+                }
+                body {
+                    background: var(--global-palette9);
+                }
+                body,
+                input,
+                select,
+                optgroup,
+                textarea {
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 1.6;
+                    font-family: var(--global-body-font-family);
+                    color: var(--global-palette4);
+                }
+                .content-bg,
+                body.content-style-unboxed .site {
+                    background: var(--global-palette9);
+                }
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-family: var(--global-heading-font-family);
+                }
+                h1 {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 1.5;
+                    color: var(--global-palette3);
+                }
+                h2 {
+                    font-weight: 700;
+                    font-size: 28px;
+                    line-height: 1.5;
+                    color: var(--global-palette3);
+                }
+                h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 1.5;
+                    color: var(--global-palette3);
+                }
+                h4 {
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 1.5;
+                    color: var(--global-palette4);
+                }
+                h5 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    color: var(--global-palette4);
+                }
+                h6 {
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    color: var(--global-palette5);
+                }
+                .entry-hero .kadence-breadcrumbs {
+                    max-width: 1290px;
+                }
+                .site-container,
+                .site-header-row-layout-contained,
+                .site-footer-row-layout-contained,
+                .entry-hero-layout-contained,
+                .comments-area,
+                .alignfull > .wp-block-cover__inner-container,
+                .alignwide > .wp-block-cover__inner-container {
+                    max-width: var(--global-content-width);
+                }
+                .content-width-narrow .content-container.site-container,
+                .content-width-narrow .hero-container.site-container {
+                    max-width: var(--global-content-narrow-width);
+                }
+                @media all and (min-width: 1520px) {
+                    .wp-site-blocks .content-container .alignwide {
+                        margin-left: -115px;
+                        margin-right: -115px;
+                        width: unset;
+                        max-width: unset;
+                    }
+                }
+                @media all and (min-width: 1550px) {
+                    .content-width-narrow .wp-site-blocks .content-container .alignwide {
+                        margin-left: -130px;
+                        margin-right: -130px;
+                        width: unset;
+                        max-width: unset;
+                    }
+                }
+                .content-style-boxed .wp-site-blocks .entry-content .alignwide {
+                    margin-left: -2rem;
+                    margin-right: -2rem;
+                }
+                @media all and (max-width: 1024px) {
+                    .content-style-boxed .wp-site-blocks .entry-content .alignwide {
+                        margin-left: -2rem;
+                        margin-right: -2rem;
+                    }
+                }
+                @media all and (max-width: 767px) {
+                    .content-style-boxed .wp-site-blocks .entry-content .alignwide {
+                        margin-left: -1.5rem;
+                        margin-right: -1.5rem;
+                    }
+                }
+                .content-area {
+                    margin-top: 5rem;
+                    margin-bottom: 5rem;
+                }
+                @media all and (max-width: 1024px) {
+                    .content-area {
+                        margin-top: 3rem;
+                        margin-bottom: 3rem;
+                    }
+                }
+                @media all and (max-width: 767px) {
+                    .content-area {
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                    }
+                }
+                .entry-content-wrap {
+                    padding: 2rem;
+                }
+                @media all and (max-width: 1024px) {
+                    .entry-content-wrap {
+                        padding: 2rem;
+                    }
+                }
+                @media all and (max-width: 767px) {
+                    .entry-content-wrap {
+                        padding: 1.5rem;
+                    }
+                }
+                .entry.single-entry {
+                    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05);
+                }
+                .entry.loop-entry {
+                    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.05);
+                }
+                .loop-entry .entry-content-wrap {
+                    padding: 2rem;
+                }
+                @media all and (max-width: 1024px) {
+                    .loop-entry .entry-content-wrap {
+                        padding: 2rem;
+                    }
+                }
+                @media all and (max-width: 767px) {
+                    .loop-entry .entry-content-wrap {
+                        padding: 1.5rem;
+                    }
+                }
+                .primary-sidebar.widget-area .widget {
+                    margin-bottom: 1.5em;
+                    color: var(--global-palette4);
+                }
+                .primary-sidebar.widget-area .widget-title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    color: var(--global-palette3);
+                }
+                button,
+                .button,
+                .wp-block-button__link,
+                input[type="button"],
+                input[type="reset"],
+                input[type="submit"],
+                .fl-button,
+                .elementor-button-wrapper .elementor-button {
+                    box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0);
+                }
+                button:hover,
+                button:focus,
+                button:active,
+                .button:hover,
+                .button:focus,
+                .button:active,
+                .wp-block-button__link:hover,
+                .wp-block-button__link:focus,
+                .wp-block-button__link:active,
+                input[type="button"]:hover,
+                input[type="button"]:focus,
+                input[type="button"]:active,
+                input[type="reset"]:hover,
+                input[type="reset"]:focus,
+                input[type="reset"]:active,
+                input[type="submit"]:hover,
+                input[type="submit"]:focus,
+                input[type="submit"]:active,
+                .elementor-button-wrapper .elementor-button:hover,
+                .elementor-button-wrapper .elementor-button:focus,
+                .elementor-button-wrapper .elementor-button:active {
+                    box-shadow: 0px 15px 25px -7px rgba(0, 0, 0, 0.1);
+                }
+                @media all and (min-width: 1025px) {
+                    .transparent-header .entry-hero .entry-hero-container-inner {
+                        padding-top: 80px;
+                    }
+                }
+                @media all and (max-width: 1024px) {
+                    .mobile-transparent-header .entry-hero .entry-hero-container-inner {
+                        padding-top: 80px;
+                    }
+                }
+                @media all and (max-width: 767px) {
+                    .mobile-transparent-header .entry-hero .entry-hero-container-inner {
+                        padding-top: 80px;
+                    }
+                }
+                #colophon {
+                    background: #faf8f5;
+                }
+                .site-middle-footer-inner-wrap {
+                    padding-top: 30px;
+                    padding-bottom: 0px;
+                    grid-column-gap: 30px;
+                    grid-row-gap: 30px;
+                }
+                .site-middle-footer-inner-wrap .widget {
+                    margin-bottom: 30px;
+                }
+                .site-middle-footer-inner-wrap .site-footer-section:not(:last-child):after {
+                    right: calc(-30px / 2);
+                }
+                .site-top-footer-inner-wrap {
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                }
+                .site-top-footer-inner-wrap .widget {
+                    margin-bottom: 0px;
+                }
+                .site-top-footer-inner-wrap .site-footer-section:not(:last-child):after {
+                    right: calc(-0px / 2);
+                }
+                .site-bottom-footer-inner-wrap {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    grid-column-gap: 30px;
+                }
+                .site-bottom-footer-inner-wrap .widget {
+                    margin-bottom: 30px;
+                }
+                .site-bottom-footer-inner-wrap .site-footer-section:not(:last-child):after {
+                    right: calc(-30px / 2);
+                }
+                .footer-social-wrap .footer-social-inner-wrap {
+                    font-size: 1em;
+                    gap: 0.3em;
+                }
+                .site-footer
+                    .site-footer-wrap
+                    .site-footer-section
+                    .footer-social-wrap
+                    .social-button {
+                    border: 2px none transparent;
+                    border-radius: 3px;
+                }
+                #colophon .footer-navigation .footer-menu-container > ul > li > a {
+                    padding-left: calc(1.2em / 2);
+                    padding-right: calc(1.2em / 2);
+                    color: var(--global-palette5);
+                }
+                #colophon .footer-navigation .footer-menu-container > ul li a:hover {
+                    color: var(--global-palette-highlight);
+                }
+                #colophon .footer-navigation .footer-menu-container > ul li.current-menu-item > a {
+                    color: var(--global-palette3);
+                }
+                .entry-hero.page-hero-section .entry-header {
+                    min-height: 200px;
+                }
+                .entry-hero.product-hero-section .entry-header {
+                    min-height: 200px;
+                }
+                .product-title .single-category {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 1.5;
+                    color: var(--global-palette3);
+                }
+                .wp-site-blocks .product-hero-section .extra-title {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 1.5;
+                }
+                .woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button,
+                .wc-block-grid__product.woo-archive-btn-button
+                    .product-details
+                    .wc-block-grid__product-add-to-cart
+                    .wp-block-button__link {
+                    border: 2px none transparent;
+                    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+                }
+                .woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:hover,
+                .wc-block-grid__product.woo-archive-btn-button
+                    .product-details
+                    .wc-block-grid__product-add-to-cart
+                    .wp-block-button__link:hover {
+                    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+                }
+                /* Kadence Header CSS */
+                @media all and (max-width: 1024px) {
+                    .mobile-transparent-header #masthead {
+                        position: absolute;
+                        left: 0px;
+                        right: 0px;
+                        z-index: 100;
+                    }
+                    .kadence-scrollbar-fixer.mobile-transparent-header #masthead {
+                        right: var(--scrollbar-offset, 0);
+                    }
+                    .mobile-transparent-header #masthead,
+                    .mobile-transparent-header
+                        .site-top-header-wrap
+                        .site-header-row-container-inner,
+                    .mobile-transparent-header
+                        .site-main-header-wrap
+                        .site-header-row-container-inner,
+                    .mobile-transparent-header
+                        .site-bottom-header-wrap
+                        .site-header-row-container-inner {
+                        background: transparent;
+                    }
+                    .site-header-row-tablet-layout-fullwidth,
+                    .site-header-row-tablet-layout-standard {
+                        padding: 0px;
+                    }
+                }
+                @media all and (min-width: 1025px) {
+                    .transparent-header #masthead {
+                        position: absolute;
+                        left: 0px;
+                        right: 0px;
+                        z-index: 100;
+                    }
+                    .transparent-header.kadence-scrollbar-fixer #masthead {
+                        right: var(--scrollbar-offset, 0);
+                    }
+                    .transparent-header #masthead,
+                    .transparent-header .site-top-header-wrap .site-header-row-container-inner,
+                    .transparent-header .site-main-header-wrap .site-header-row-container-inner,
+                    .transparent-header .site-bottom-header-wrap .site-header-row-container-inner {
+                        background: transparent;
+                    }
+                }
+                .site-branding a.brand img {
+                    max-width: 280px;
+                }
+                .site-branding a.brand img.svg-logo-image {
+                    width: 280px;
+                }
+                .site-branding {
+                    padding: 0px 0px 0px 0px;
+                }
+                #masthead,
+                #masthead
+                    .kadence-sticky-header.item-is-fixed:not(.item-at-start):not(.site-header-row-container),
+                #masthead
+                    .kadence-sticky-header.item-is-fixed:not(.item-at-start)
+                    > .site-header-row-container-inner {
+                    background: #ffffff;
+                }
+                .site-main-header-inner-wrap {
+                    min-height: 80px;
+                }
+                .site-top-header-inner-wrap {
+                    min-height: 0px;
+                }
+                .site-bottom-header-inner-wrap {
+                    min-height: 0px;
+                }
+                .header-navigation[class*="header-navigation-style-underline"]
+                    .header-menu-container.primary-menu-container
+                    > ul
+                    > li
+                    > a:after {
+                    width: calc(100% - 1.2em);
+                }
+                .main-navigation .primary-menu-container > ul > li.menu-item > a {
+                    padding-left: calc(1.2em / 2);
+                    padding-right: calc(1.2em / 2);
+                    padding-top: 0.6em;
+                    padding-bottom: 0.6em;
+                    color: var(--global-palette5);
+                }
+                .main-navigation
+                    .primary-menu-container
+                    > ul
+                    > li.menu-item
+                    > .dropdown-nav-special-toggle {
+                    right: calc(1.2em / 2);
+                }
+                .main-navigation .primary-menu-container > ul > li.menu-item > a:hover {
+                    color: var(--global-palette-highlight);
+                }
+                .main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a {
+                    color: var(--global-palette3);
+                }
+                .header-navigation[class*="header-navigation-style-underline"]
+                    .header-menu-container.secondary-menu-container
+                    > ul
+                    > li
+                    > a:after {
+                    width: calc(100% - 1.2em);
+                }
+                .secondary-navigation .secondary-menu-container > ul > li.menu-item > a {
+                    padding-left: calc(1.2em / 2);
+                    padding-right: calc(1.2em / 2);
+                    padding-top: 0.6em;
+                    padding-bottom: 0.6em;
+                    color: var(--global-palette5);
+                }
+                .secondary-navigation
+                    .primary-menu-container
+                    > ul
+                    > li.menu-item
+                    > .dropdown-nav-special-toggle {
+                    right: calc(1.2em / 2);
+                }
+                .secondary-navigation .secondary-menu-container > ul > li.menu-item > a:hover {
+                    color: var(--global-palette-highlight);
+                }
+                .secondary-navigation
+                    .secondary-menu-container
+                    > ul
+                    > li.menu-item.current-menu-item
+                    > a {
+                    color: var(--global-palette3);
+                }
+                .header-navigation .header-menu-container ul ul.sub-menu,
+                .header-navigation .header-menu-container ul ul.submenu {
+                    background: var(--global-palette3);
+                    box-shadow: 0px 2px 13px 0px rgba(0, 0, 0, 0.1);
+                }
+                .header-navigation .header-menu-container ul ul li.menu-item,
+                .header-menu-container
+                    ul.menu
+                    > li.kadence-menu-mega-enabled
+                    > ul
+                    > li.menu-item
+                    > a {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                }
+                .header-navigation .header-menu-container ul ul li.menu-item > a {
+                    width: 200px;
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                    color: var(--global-palette8);
+                    font-size: 12px;
+                }
+                .header-navigation .header-menu-container ul ul li.menu-item > a:hover {
+                    color: var(--global-palette9);
+                    background: var(--global-palette4);
+                }
+                .header-navigation .header-menu-container ul ul li.menu-item.current-menu-item > a {
+                    color: var(--global-palette9);
+                    background: var(--global-palette4);
+                }
+                .mobile-toggle-open-container .menu-toggle-open {
+                    color: var(--global-palette5);
+                    padding: 0.4em 0.6em 0.4em 0.6em;
+                    font-size: 14px;
+                }
+                .mobile-toggle-open-container .menu-toggle-open.menu-toggle-style-bordered {
+                    border: 1px solid currentColor;
+                }
+                .mobile-toggle-open-container .menu-toggle-open .menu-toggle-icon {
+                    font-size: 20px;
+                }
+                .mobile-toggle-open-container .menu-toggle-open:hover,
+                .mobile-toggle-open-container .menu-toggle-open:focus {
+                    color: var(--global-palette-highlight);
+                }
+                .mobile-navigation ul li {
+                    font-size: 14px;
+                }
+                .mobile-navigation ul li a {
+                    padding-top: 1em;
+                    padding-bottom: 1em;
+                }
+                .mobile-navigation ul li > a,
+                .mobile-navigation ul li.menu-item-has-children > .drawer-nav-drop-wrap {
+                    color: var(--global-palette8);
+                }
+                .mobile-navigation ul li.current-menu-item > a,
+                .mobile-navigation
+                    ul
+                    li.current-menu-item.menu-item-has-children
+                    > .drawer-nav-drop-wrap {
+                    color: var(--global-palette-highlight);
+                }
+                .mobile-navigation ul li.menu-item-has-children .drawer-nav-drop-wrap,
+                .mobile-navigation ul li:not(.menu-item-has-children) a {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                }
+                .mobile-navigation:not(.drawer-navigation-parent-toggle-true)
+                    ul
+                    li.menu-item-has-children
+                    .drawer-nav-drop-wrap
+                    button {
+                    border-left: 1px solid rgba(255, 255, 255, 0.1);
+                }
+                #mobile-drawer .drawer-header .drawer-toggle {
+                    padding: 0.6em 0.15em 0.6em 0.15em;
+                    font-size: 24px;
+                }
+                #main-header .header-button {
+                    border: 2px none transparent;
+                    box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0);
+                }
+                #main-header .header-button:hover {
+                    box-shadow: 0px 15px 25px -7px rgba(0, 0, 0, 0.1);
+                }
+                .header-social-wrap .header-social-inner-wrap {
+                    font-size: 1em;
+                    gap: 0.3em;
+                }
+                .header-social-wrap .header-social-inner-wrap .social-button {
+                    border: 2px none transparent;
+                    border-radius: 3px;
+                }
+                .header-mobile-social-wrap .header-mobile-social-inner-wrap {
+                    font-size: 1em;
+                    gap: 0.3em;
+                }
+                .header-mobile-social-wrap .header-mobile-social-inner-wrap .social-button {
+                    border: 2px none transparent;
+                    border-radius: 3px;
+                }
+                .search-toggle-open-container .search-toggle-open {
+                    color: var(--global-palette5);
+                }
+                .search-toggle-open-container .search-toggle-open.search-toggle-style-bordered {
+                    border: 1px solid currentColor;
+                }
+                .search-toggle-open-container .search-toggle-open .search-toggle-icon {
+                    font-size: 1em;
+                }
+                .search-toggle-open-container .search-toggle-open:hover,
+                .search-toggle-open-container .search-toggle-open:focus {
+                    color: var(--global-palette-highlight);
+                }
+                #search-drawer .drawer-inner {
+                    background: rgba(9, 12, 16, 0.97);
+                }
+                .mobile-header-button-wrap .mobile-header-button-inner-wrap .mobile-header-button {
+                    border: 2px none transparent;
+                    box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0);
+                }
+                .mobile-header-button-wrap
+                    .mobile-header-button-inner-wrap
+                    .mobile-header-button:hover {
+                    box-shadow: 0px 15px 25px -7px rgba(0, 0, 0, 0.1);
+                }
+                /* Kadence Events CSS */
+                :root {
+                    --tec-color-background-events: var(--global-palette9);
+                    --tec-color-text-event-date: var(--global-palette3);
+                    --tec-color-text-event-title: var(--global-palette3);
+                    --tec-color-text-events-title: var(--global-palette3);
+                    --tec-color-background-view-selector-list-item-hover: var(--global-palette7);
+                    --tec-color-background-secondary: var(--global-palette7);
+                    --tec-color-link-primary: var(--global-palette3);
+                    --tec-color-icon-active: var(--global-palette3);
+                    --tec-color-day-marker-month: var(--global-palette4);
+                    --tec-color-border-active-month-grid-hover: var(--global-palette5);
+                    --tec-color-accent-primary: var(--global-palette1);
+                }
+            </style>
+            <link
+                rel="stylesheet"
+                id="kadence-header-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/header.min.css?ver=1.1.27"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-content-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/content.min.css?ver=1.1.27"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-related-posts-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/related-posts.min.css?ver=1.1.27"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-splide-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/kadence-splide.min.css?ver=1.1.27"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-woocommerce-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/woocommerce.min.css?ver=1.1.27"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-footer-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/footer.min.css?ver=1.1.27"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="event-tickets-rsvp-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/css/rsvp.min.css?ver=5.5.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="event-tickets-tpp-css-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/css/tpp.min.css?ver=5.5.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="TribeEventsWooTickets-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets-plus/src/resources/css/wootickets.min.css?ver=4.5.0.1"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="kadence-tribe-css"
+                href="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/css/tribe-events.min.css?ver=1.1.26"
+                media="all"
+            />
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/breakpoints.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-breakpoints-js"
+            ></script>
+            <link rel="https://api.w.org/" href="https://demo.theeventscalendar.com/wp-json/" />
+            <link
+                rel="alternate"
+                type="application/json"
+                href="https://demo.theeventscalendar.com/wp-json/wp/v2/tribe_events/6219"
+            />
+            <link
+                rel="EditURI"
+                type="application/rsd+xml"
+                title="RSD"
+                href="https://demo.theeventscalendar.com/xmlrpc.php?rsd"
+            />
+            <link
+                rel="wlwmanifest"
+                type="application/wlwmanifest+xml"
+                href="https://demo.theeventscalendar.com/wp-includes/wlwmanifest.xml"
+            />
+            <meta name="generator" content="WordPress 6.0.2" />
+            <meta name="generator" content="WooCommerce 6.8.2" />
+            <link
+                rel="canonical"
+                href="https://demo.theeventscalendar.com/event/eventbrite-tickets-demo/"
+            />
+            <link rel="shortlink" href="https://demo.theeventscalendar.com/?p=6219" />
+            <link
+                rel="alternate"
+                type="application/json+oembed"
+                href="https://demo.theeventscalendar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.theeventscalendar.com%2Fevent%2Feventbrite-tickets-demo%2F"
+            />
+            <link
+                rel="alternate"
+                type="text/xml+oembed"
+                href="https://demo.theeventscalendar.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.theeventscalendar.com%2Fevent%2Feventbrite-tickets-demo%2F&#038;format=xml"
+            />
+            <meta name="et-api-version" content="v1" />
+            <meta name="et-api-origin" content="https://demo.theeventscalendar.com" />
+            <link
+                rel="https://theeventscalendar.com/"
+                href="https://demo.theeventscalendar.com/wp-json/tribe/tickets/v1/"
+            />
+            <meta name="tec-api-version" content="v1" />
+            <meta name="tec-api-origin" content="https://demo.theeventscalendar.com" />
+            <link
+                rel="alternate"
+                href="https://demo.theeventscalendar.com/wp-json/tribe/events/v1/events/6219"
+            />
+            <noscript
+                ><style>
+                    .woocommerce-product-gallery {
+                        opacity: 1 !important;
+                    }
+                </style></noscript
+            >
+            <script type="application/ld+json">
+                [
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Event",
+                        "name": "Eventbrite Tickets Demo",
+                        "description": "&lt;p&gt;Eventbrite Tickets can import events (and their tickets) from Eventbrite into The Events Calendar. Eventbrite is an extremely popular service for selling tickets. In fact, some prefer using the service...&lt;/p&gt;\\n",
+                        "image": "https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_.jpg",
+                        "url": "https://demo.theeventscalendar.com/event/eventbrite-tickets-demo/",
+                        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                        "startDate": "2023-03-22T19:00:00-07:00",
+                        "endDate": "2023-03-25T22:00:00-07:00",
+                        "organizer": {
+                            "@type": "Person",
+                            "name": "Barney Stinson",
+                            "description": "",
+                            "url": "",
+                            "telephone": "",
+                            "email": "",
+                            "sameAs": ""
+                        },
+                        "offers": {
+                            "@type": "Offer",
+                            "price": "0",
+                            "priceCurrency": "USD",
+                            "url": "https://demo.theeventscalendar.com/event/eventbrite-tickets-demo/",
+                            "category": "primary",
+                            "availability": "inStock",
+                            "validFrom": "2021-02-10T00:00:00+00:00"
+                        },
+                        "performer": "Organization"
+                    }
+                ]
+            </script>
+            <link
+                rel="icon"
+                href="https://demo.theeventscalendar.com/wp-content/uploads/cropped-TEC-horns-2020-ico-32x32.png"
+                sizes="32x32"
+            />
+            <link
+                rel="icon"
+                href="https://demo.theeventscalendar.com/wp-content/uploads/cropped-TEC-horns-2020-ico-192x192.png"
+                sizes="192x192"
+            />
+            <link
+                rel="apple-touch-icon"
+                href="https://demo.theeventscalendar.com/wp-content/uploads/cropped-TEC-horns-2020-ico-180x180.png"
+            />
+            <meta
+                name="msapplication-TileImage"
+                content="https://demo.theeventscalendar.com/wp-content/uploads/cropped-TEC-horns-2020-ico-270x270.png"
+            />
+            <style id="wp-custom-css">
+                /* Quick CSS hack to get rid of list item dots on /events/virtual-events/ */
+                body ul.tribe-events-c-top-bar__nav-list {
+                    list-style-type: none;
+                }
+
+                /* Fix empty gray entry header on homepage */
+                .blog .tribe_events-archive-hero-section {
+                    display: none;
+                }
+
+                body .entry {
+                    box-shadow: none;
+                }
+
+                .single-tribe_events #primary .tribe-blocks-editor .tribe-events-event-meta {
+                    background: transparent;
+                }
+
+                .wp-block-separator {
+                    visibility: hidden;
+                }
+
+                /* Get rid of gigantic icons? */
+                .tribe-events-hybrid-single-marker {
+                    display: none;
+                }
+
+                /* Make search button a ghost button */
+                .tribe-events-c-search__button {
+                    background: transparent !important;
+                    color: var(--tec-color-text-primary) !important;
+                    border: 1px solid var(--tec-color-text-primary) !important;
+                }
+
+                /* Make Try it yourself link big and blue */
+                #menu-item-5361 a {
+                    background: var(--global-palette-btn-bg) !important;
+                    color: #fff !important;
+                    border-radius: 28px;
+                    margin-left: 10px;
+                    padding-left: 20px;
+                    padding-right: 10px;
+                }
+
+                /* "You are viewing..." styles */
+                .you-are-viewing {
+                    padding: 0 var(--global-content-edge-padding);
+                    position: relative;
+                    text-align: center;
+                    top: 40px;
+                }
+
+                @media (max-width: 1012px) {
+                    .you-are-viewing {
+                        top: 24px;
+                    }
+                }
+
+                @media (max-width: 755px) {
+                    .you-are-viewing {
+                        font-size: 12px;
+                        top: 16px;
+                    }
+                }
+
+                /* Single pane accordion block */
+
+                .accordion-single-pane .kt-accordion-pane + .kt-accordion-pane {
+                    display: none;
+                }
+
+                .kt-accordion-inner-wrap:not(.kt-accordion-initialized) {
+                    display: none;
+                }
+            </style>
+        </div>
+
+        <!-- ---------------------------------------------- -->
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="assets/css/aos.min.css" />
+        <link rel="stylesheet" href="assets/css/venobox.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body
+        class="d-flex flex-column justify-content-between"
+        data-bs-spy="scroll"
+        data-bs-target="#team-list"
+        data-bs-offset="200"
+    >
+        <!-- Header start -->
+        <nav class="navbar navbar-expand-xl navbar-light shadow shadow-xl-light fixed-top">
+            <div class="container gap-0 gap-xl-4">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo.png" alt="" class="img-fluid logo" />
+                </a>
+
+                <!-- Search form -->
+                <form
+                    action=""
+                    class="navbar-search-form rounded shadow-light border border-primary border-opacity-25"
+                    id="navbar-search-form"
+                >
+                    <div class="d-flex gap-2 bg-white p-2 rounded">
+                        <input
+                            type="search"
+                            name=""
+                            id="search-input"
+                            class="search-input form-control form-control-lg border-0"
+                            placeholder="Search by keywords"
+                        />
+                        <button
+                            title="Search"
+                            id="search-btn"
+                            class="search-btn btn btn-primary btn-lg py-2 px-4"
+                            type="button"
+                        >
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Buttons -->
+                <div class="d-flex align-items-center gap-2 order-xl-3">
+                    <!-- Search toggler button -->
+                    <button
+                        title="Toggle search"
+                        id="search-toggler-btn"
+                        class="search-toggler-btn btn btn-lg py-2 px-3 text-primary"
+                        type="button"
+                    >
+                        <i class="bi bi-search"></i>
+                    </button>
+
+                    <!-- Navbar toggler button -->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent"
+                        aria-controls="navbarContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <div class="navbar-toggler-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto p-0 m-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                id="navbarDropdown"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                                data-bs-auto-close="outside"
+                            >
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="laboratory-services.html">
+                                        Laboratory Services
+                                    </a>
+                                </li>
+                                <li class="dropdown d-flex flex-wrap nested-dropdown">
+                                    <a class="dropdown-item" href="industry-services.html"
+                                        >Industry Services</a
+                                    >
+                                    <button
+                                        type="button"
+                                        class="dropdown-toggle dropdown-toggle-split"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        data-bs-auto-close="outside"
+                                    >
+                                        <i class="bi bi-chevron-down"></i>
+                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu nested-dropdown-menu">
+                                        <a
+                                            class="dropdown-item"
+                                            href="thermal-process-evaluation-development-validation.html"
+                                            >Thermal Process Evaluation and Development</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="research-product-development.html"
+                                            >Research and Development</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="food-safety-quality-systems.html"
+                                            >Food Safety and Quality Systems</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="plant-facilities-layout-and-design.html"
+                                            >Plant Facilities and Layout Design</a
+                                        >
+                                        <a
+                                            class="dropdown-item"
+                                            href="export-market-access-and-development.html"
+                                            >Export Market Access</a
+                                        >
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="diagnostics-services.html">
+                                        Diagnostics Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        class="dropdown-item"
+                                        href="education-training-services.html"
+                                    >
+                                        Education & Training
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="audit-services.html">
+                                        Audit Services
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TSL CSI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="media.html">Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About TSL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header end -->
+
+        <!-- Main content start -->
+        <main class="main">
+            <!-- Events start -->
+            <section class="py-9 py-md-13 overflow-hidden">
+                <div class="container">
+                    <div id="inner-wrap" class="wrap hfeed kt-clear">
+                        <div id="primary" class="content-area">
+                            <div class="content-container site-container">
+                                <main
+                                    id="tribe-events-pg-template"
+                                    class="tribe-events-pg-template"
+                                >
+                                    <div class="tribe-events-before-html"></div>
+                                    <span class="tribe-events-ajax-loading"
+                                        ><img
+                                            class="tribe-events-spinner-medium"
+                                            src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/images/tribe-loading.gif"
+                                            alt="Loading Events"
+                                    /></span>
+                                    <div
+                                        id="tribe-events-content"
+                                        class="tribe-events-single entry content-bg"
+                                    >
+                                        <div class="entry-content-wrap">
+                                            <div
+                                                class="entry-header tribe_events-title title-align-inherit title-tablet-align-inherit title-mobile-align-inherit"
+                                            >
+                                                <p class="tribe-events-back">
+                                                    <a href="events.html">
+                                                        &laquo; All Events
+                                                    </a>
+                                                </p>
+                                                <h1
+                                                    class="entry-title tribe-events-single-event-title"
+                                                >
+                                                    Eventbrite Tickets Demo
+                                                </h1>
+                                            </div>
+                                            <div class="tribe-events-schedule tribe-clearfix">
+                                                <h2>
+                                                    <span class="tribe-event-date-start"
+                                                        >March 22, 2023 @ 7:00 pm</span
+                                                    >
+                                                    -
+                                                    <span class="tribe-event-date-end"
+                                                        >March 25, 2023 @ 10:00 pm</span
+                                                    >
+                                                </h2>
+                                                <span class="tribe-events-cost">Free</span>
+                                            </div>
+
+                                            <div
+                                                id="tribe-events-header"
+                                                data-title="Eventbrite Tickets Demo &#8211; The Events Calendar Demo"
+                                                data-viewtitle="Eventbrite Tickets Demo"
+                                            >
+                                                <nav
+                                                    class="tribe-events-nav-pagination"
+                                                    aria-label="Event Navigation"
+                                                >
+                                                    <ul class="tribe-events-sub-nav">
+                                                        <li class="tribe-events-nav-previous">
+                                                            <a
+                                                                href="https://demo.theeventscalendar.com/event/healthy-cooking-for-busy-schedules-2/2022-09-27/"
+                                                                ><span>&laquo;</span> Event in a
+                                                                Series</a
+                                                            >
+                                                        </li>
+                                                        <li class="tribe-events-nav-next"></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+
+                                            <div
+                                                id="post-6219"
+                                                class="post-6219 tribe_events type-tribe_events status-publish has-post-thumbnail hentry"
+                                            >
+                                                <div class="tribe-events-event-image">
+                                                    <img
+                                                        width="1200"
+                                                        height="600"
+                                                        src="https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_.jpg"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt=""
+                                                        srcset="
+                                                            https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_.jpg          1200w,
+                                                            https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_-300x150.jpg   300w,
+                                                            https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_-1024x512.jpg 1024w,
+                                                            https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_-768x384.jpg   768w,
+                                                            https://demo.theeventscalendar.com/wp-content/uploads/c04f69939151e738484063087d29d389-KyFXoI.tmp_-450x225.jpg   450w
+                                                        "
+                                                        sizes="(max-width: 1200px) 100vw, 1200px"
+                                                    />
+                                                </div>
+
+                                                <div
+                                                    class="tribe-events-single-event-description tribe-events-content"
+                                                >
+                                                    <div>
+                                                        Eventbrite Tickets can import events (and
+                                                        their tickets) from Eventbrite into The
+                                                        Events Calendar.
+                                                    </div>
+                                                    <div style="margin-top: 20px">
+                                                        <div style="margin: 20px 10px">
+                                                            <p>
+                                                                Eventbrite is an extremely popular
+                                                                service for selling tickets. In
+                                                                fact, some prefer using the service
+                                                                for selling tickets because of its
+                                                                simplicity and hands-off approach to
+                                                                ticketing.
+                                                            </p>
+                                                            <p>
+                                                                Whether you use Eventbrite or some
+                                                                other service, no one likes having
+                                                                to manage the same thing in multiple
+                                                                places and that what Eventbrite
+                                                                Tickets solves. Even though you have
+                                                                an event on Eventbrite, you might
+                                                                still want it to show up in the
+                                                                calendar on your own website.
+                                                                <a
+                                                                    href="https://theeventscalendar.com/product/wordpress-eventbrite-tickets/"
+                                                                    target="_blank"
+                                                                    rel="nofollow noopener noreferrer"
+                                                                    >Eventbrite Tickets</a
+                                                                >
+                                                                can import events (and their
+                                                                tickets) from Eventbrite into The
+                                                                Events Calendar.
+                                                            </p>
+                                                            <p>
+                                                                Better yet, it even does the inverse
+                                                                and lets you publish an event on
+                                                                your calendar and instantly sync it
+                                                                with Eventbrite. Now you have the
+                                                                best of both worlds where your event
+                                                                is managed and maintained on your
+                                                                own calendar while you get to use
+                                                                Eventbrite’s ticketing capabilities!
+                                                            </p>
+                                                            <p>
+                                                                Events that are imported to or
+                                                                synced with Eventbrite will display
+                                                                a ticket form on the event page,
+                                                                like the example below.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="tribe-events tribe-common">
+                                                    <div
+                                                        class="tribe-events-c-subscribe-dropdown__container"
+                                                    >
+                                                        <div
+                                                            class="tribe-events-c-subscribe-dropdown"
+                                                        >
+                                                            <div
+                                                                class="tribe-common-c-btn-border tribe-events-c-subscribe-dropdown__button"
+                                                                tabindex="0"
+                                                            >
+                                                                <svg
+                                                                    class="tribe-common-c-svgicon tribe-common-c-svgicon--cal-export tribe-events-c-subscribe-dropdown__export-icon"
+                                                                    viewBox="0 0 23 17"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M.128.896V16.13c0 .211.145.383.323.383h15.354c.179 0 .323-.172.323-.383V.896c0-.212-.144-.383-.323-.383H.451C.273.513.128.684.128.896Zm16 6.742h-.901V4.679H1.009v10.729h14.218v-3.336h.901V7.638ZM1.01 1.614h14.218v2.058H1.009V1.614Z"
+                                                                    />
+                                                                    <path
+                                                                        d="M20.5 9.846H8.312M18.524 6.953l2.89 2.909-2.855 2.855"
+                                                                        stroke-width="1.2"
+                                                                        stroke-linecap="round"
+                                                                        stroke-linejoin="round"
+                                                                    />
+                                                                </svg>
+                                                                <button
+                                                                    class="tribe-events-c-subscribe-dropdown__button-text"
+                                                                >
+                                                                    Add to calendar
+                                                                </button>
+                                                                <svg
+                                                                    class="tribe-common-c-svgicon tribe-common-c-svgicon--caret-down tribe-events-c-subscribe-dropdown__button-icon"
+                                                                    viewBox="0 0 10 7"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        clip-rule="evenodd"
+                                                                        d="M1.008.609L5 4.6 8.992.61l.958.958L5 6.517.05 1.566l.958-.958z"
+                                                                        class="tribe-common-c-svgicon__svg-fill"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                            <div
+                                                                class="tribe-events-c-subscribe-dropdown__content"
+                                                            >
+                                                                <ul
+                                                                    class="tribe-events-c-subscribe-dropdown__list"
+                                                                    tabindex="0"
+                                                                >
+                                                                    <li
+                                                                        class="tribe-events-c-subscribe-dropdown__list-item"
+                                                                    >
+                                                                        <a
+                                                                            href="https://www.google.com/calendar/event?action=TEMPLATE&#038;dates=20230322T190000/20230325T220000&#038;text=Eventbrite%20Tickets%20Demo&#038;details=%3C%21--+wp%3Atribe%2Fevent-datetime++%2F--%3E%3C%21--+wp%3Atribe%2Ffeatured-image++%2F--%3E%3C%21--+wp%3Afreeform+--%3E%3Cdiv%3EEventbrite+Tickets+can+import+events+%28and+their+tickets%29+from+Eventbrite+into+The+Events+Calendar.%3C%2Fdiv%3E%3Cdiv+style%3D%22margin-top%3A+20px%3B%22%3E%3Cdiv+style%3D%22margin%3A+20px+10px%3B%22%3E%3Cp%3EEventbrite+is+an+extremely+popular+service+for+selling+tickets.+In+fact%2C+some+prefer+using+the+service+for+selling+tickets+because+of+its+simplicity+and+hands-off+approach+to+ticketing.%3C%2Fp%3E%3Cp%3EWhether+you+use+Eventbrite+or+some+other+service%2C+no+one+likes+having+to+manage+the+same+thing+in+multiple+places+and+that+what+Eventbrite+Tickets+solves.+Even+though+you+have+an+event+on+Eventbrite%2C+you+might+still+want+it+to+show+up+in+the+calendar+on+your+own+website.+%3Ca+href%3D%22https%3A%2F%2Ftheeventscalendar.com%2Fproduct%2Fwordpress-eventbrite-tickets%2F%22+target%3D%22_blank%22+r%20(View%20Full%20event%20Description%20Here:%20https://demo.theeventscalendar.com/event/eventbrite-tickets-demo/)&#038;trp=false&#038;ctz=America/Los_Angeles&#038;sprop=website:https://demo.theeventscalendar.com"
+                                                                            class="tribe-events-c-subscribe-dropdown__list-item-link"
+                                                                            tabindex="0"
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer nofollow noindex"
+                                                                        >
+                                                                            Google Calendar
+                                                                        </a>
+                                                                    </li>
+                                                                    <li
+                                                                        class="tribe-events-c-subscribe-dropdown__list-item"
+                                                                    >
+                                                                        <a
+                                                                            href="webcal://demo.theeventscalendar.com/event/eventbrite-tickets-demo/?ical=1"
+                                                                            class="tribe-events-c-subscribe-dropdown__list-item-link"
+                                                                            tabindex="0"
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer nofollow noindex"
+                                                                        >
+                                                                            iCalendar
+                                                                        </a>
+                                                                    </li>
+                                                                    <li
+                                                                        class="tribe-events-c-subscribe-dropdown__list-item"
+                                                                    >
+                                                                        <a
+                                                                            href="https://outlook.office.com/owa/?path=/calendar/action/compose&#038;rrv=addevent&#038;startdt=2023-03-22T19:00:00&#038;enddt=2023-03-25T22:00:00&#038;location&#038;subject=Eventbrite%20Tickets%20Demo&#038;body=Eventbrite%20Tickets%20can%20import%20events%20%28and%20their%20tickets%29%20from%20Eventbrite%20into%20The%20Events%20Calendar.%3Cp%3EEventbrite%20is%20an%20extremely%20popular%20service%20for%20selling%20tickets.%20In%20fact%2C%20some%20prefer%20using%20the%20service%20for%20selling%20tickets%20because%20of%20its%20simplicity%20and%20hands-off%20approach%20to%20ticketing.%3C%2Fp%3E%3Cp%3EWhether%20you%20use%20Eventbrite%20or%20some%20other%20service%2C%20no%20one%20likes%20having%20to%20manage%20the%20same%20thing%20in%20multiple%20places%20and%20that%20what%20Eventbrite%20Tickets%20solves.%20Even%20though%20you%20have%20an%20event%20on%20Eventbrite%2C%20you%20might%20still%20want%20it%20to%20show%20up%20in%20the%20calendar%20on%20your%20own%20website.%20Eventbrite%20Tickets%20can%20import%20events%20%28and%20their%20tickets%29%20from%20Eventbrite%20into%20The%20Events%20Calendar.%3C%2Fp%3E%3Cp%3EBetter%20yet%2C%20it%20even%20does%20the%20inverse%20and%20lets%20you%20publish%20an%20event%20on%20your%20calendar%20and%20instantly%20sync%20it%20with%20Eventbrite.%20Now%20you%20have%20the%20best%20of%20both%20worlds%20where%20your%20event%20is%20managed%20and%20maintained%20on%20your%20%28View%20Full%20Event%20Description%20Here%3A%20https%3A%2F%2Fdemo.theeventscalendar.com%2Fevent%2Feventbrite-tickets-demo%2F%29"
+                                                                            class="tribe-events-c-subscribe-dropdown__list-item-link"
+                                                                            tabindex="0"
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer nofollow noindex"
+                                                                        >
+                                                                            Outlook 365
+                                                                        </a>
+                                                                    </li>
+                                                                    <li
+                                                                        class="tribe-events-c-subscribe-dropdown__list-item"
+                                                                    >
+                                                                        <a
+                                                                            href="https://outlook.live.com/owa/?path=/calendar/action/compose&#038;rrv=addevent&#038;startdt=2023-03-22T19:00:00&#038;enddt=2023-03-25T22:00:00&#038;location&#038;subject=Eventbrite%20Tickets%20Demo&#038;body=Eventbrite%20Tickets%20can%20import%20events%20%28and%20their%20tickets%29%20from%20Eventbrite%20into%20The%20Events%20Calendar.%3Cp%3EEventbrite%20is%20an%20extremely%20popular%20service%20for%20selling%20tickets.%20In%20fact%2C%20some%20prefer%20using%20the%20service%20for%20selling%20tickets%20because%20of%20its%20simplicity%20and%20hands-off%20approach%20to%20ticketing.%3C%2Fp%3E%3Cp%3EWhether%20you%20use%20Eventbrite%20or%20some%20other%20service%2C%20no%20one%20likes%20having%20to%20manage%20the%20same%20thing%20in%20multiple%20places%20and%20that%20what%20Eventbrite%20Tickets%20solves.%20Even%20though%20you%20have%20an%20event%20on%20Eventbrite%2C%20you%20might%20still%20want%20it%20to%20show%20up%20in%20the%20calendar%20on%20your%20own%20website.%20Eventbrite%20Tickets%20can%20import%20events%20%28and%20their%20tickets%29%20from%20Eventbrite%20into%20The%20Events%20Calendar.%3C%2Fp%3E%3Cp%3EBetter%20yet%2C%20it%20even%20does%20the%20inverse%20and%20lets%20you%20publish%20an%20event%20on%20your%20calendar%20and%20instantly%20sync%20it%20with%20Eventbrite.%20Now%20you%20have%20the%20best%20of%20both%20worlds%20where%20your%20event%20is%20managed%20and%20maintained%20on%20your%20%28View%20Full%20Event%20Description%20Here%3A%20https%3A%2F%2Fdemo.theeventscalendar.com%2Fevent%2Feventbrite-tickets-demo%2F%29"
+                                                                            class="tribe-events-c-subscribe-dropdown__list-item-link"
+                                                                            tabindex="0"
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer nofollow noindex"
+                                                                        >
+                                                                            Outlook Live
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="tribe-events-single-section tribe-events-event-meta primary tribe-clearfix"
+                                                >
+                                                    <div
+                                                        class="tribe-events-meta-group tribe-events-meta-group-details"
+                                                    >
+                                                        <h2
+                                                            class="tribe-events-single-section-title"
+                                                        >
+                                                            Details
+                                                        </h2>
+                                                        <dl>
+                                                            <dt
+                                                                class="tribe-events-start-datetime-label"
+                                                            >
+                                                                Start:
+                                                            </dt>
+                                                            <dd>
+                                                                <abbr
+                                                                    class="tribe-events-abbr tribe-events-start-datetime updated published dtstart"
+                                                                    title="2023-03-22"
+                                                                >
+                                                                    March 22, 2023 @ 7:00 pm
+                                                                </abbr>
+                                                            </dd>
+                                                            <dt
+                                                                class="tribe-events-end-datetime-label"
+                                                            >
+                                                                End:
+                                                            </dt>
+                                                            <dd>
+                                                                <abbr
+                                                                    class="tribe-events-abbr tribe-events-end-datetime dtend"
+                                                                    title="2023-03-25"
+                                                                >
+                                                                    March 25, 2023 @ 10:00 pm
+                                                                </abbr>
+                                                            </dd>
+                                                            <dt
+                                                                class="tribe-events-event-cost-label"
+                                                            >
+                                                                Cost:
+                                                            </dt>
+                                                            <dd class="tribe-events-event-cost">
+                                                                Free
+                                                            </dd>
+                                                            <dt
+                                                                class="tribe-events-event-url-label"
+                                                            >
+                                                                Website:
+                                                            </dt>
+                                                            <dd class="tribe-events-event-url">
+                                                                <a
+                                                                    href="https://www.eventbrite.com/e/eventbrite-tickets-demo-tickets-141167139715"
+                                                                    target="_self"
+                                                                    rel="external"
+                                                                    >https://www.eventbrite.com/e/eventbrite-tickets-demo-tickets-141167139715</a
+                                                                >
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div
+                                                        class="tribe-events-meta-group tribe-events-meta-group-organizer"
+                                                    >
+                                                        <h2
+                                                            class="tribe-events-single-section-title"
+                                                        >
+                                                            Organizer
+                                                        </h2>
+                                                        <dl>
+                                                            <dt style="display: none"></dt>
+                                                            <dd class="tribe-organizer">
+                                                                <a
+                                                                    href="https://demo.theeventscalendar.com/organizer/barney-stinson-2/"
+                                                                    title="Barney Stinson"
+                                                                    target="_self"
+                                                                    rel=""
+                                                                    >Barney Stinson</a
+                                                                >
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="eventbrite-ticket-embed">
+                                                    <iframe
+                                                        id="eventbrite-tickets-141167139715"
+                                                        src="https://www.eventbrite.com/tickets-external?eid=141167139715&amp;ref=etckt&v=2"
+                                                        height="269"
+                                                        width="100%"
+                                                        frameborder="0"
+                                                        allowtransparency="true"
+                                                    ></iframe>
+                                                    <div
+                                                        style="
+                                                            font-family: Helvetica, Arial,
+                                                                sans-serif;
+                                                            font-size: 12px;
+                                                            margin: 2px 0;
+                                                            width: 100%;
+                                                            text-align: left;
+                                                        "
+                                                    >
+                                                        <a
+                                                            class="eventbrite-powered-by-eb"
+                                                            style="
+                                                                color: #adb0b6;
+                                                                text-decoration: none;
+                                                            "
+                                                            target="_blank"
+                                                            rel="noopener"
+                                                            href="http://www.eventbrite.com/"
+                                                            >Powered by Eventbrite</a
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="tribe-events-footer">
+                                                <nav
+                                                    class="tribe-events-nav-pagination"
+                                                    aria-label="Event Navigation"
+                                                >
+                                                    <ul class="tribe-events-sub-nav">
+                                                        <li class="tribe-events-nav-previous">
+                                                            <a
+                                                                href="https://demo.theeventscalendar.com/event/healthy-cooking-for-busy-schedules-2/2022-09-27/"
+                                                                ><span>&laquo;</span> Event in a
+                                                                Series</a
+                                                            >
+                                                        </li>
+                                                        <li class="tribe-events-nav-next"></li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tribe-events-after-html"></div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Events end -->
+        </main>
+        <!-- Main content end -->
+
+        <!-- Footer start -->
+        <footer class="footer bg-light py-5 py-lg-11">
+            <div class="container">
+                <div
+                    class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 g-xl-7 justify-content-center"
+                >
+                    <div
+                        class="col footer-widget text-center text-lg-start mb-4 mb-md-0"
+                        data-aos="fade-up-sm"
+                    >
+                        <div class="widget-inner">
+                            <a href="#" class="mb-3 d-inline-block">
+                                <img src="assets/images/logo.png" alt="" class="img-fluid logo" />
+                            </a>
+                            <p class="copyright mb-4 text-muted">
+                                © 2022 Technological Solutions Limited. All rights reserved.
+                            </p>
+                            <ul
+                                class="social list-unstyled d-flex justify-content-center justify-content-lg-start flex-wrap gap-2 mb-0"
+                            >
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-facebook"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-twitter"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-linkedin"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-youtube"></i>
+                                        <svg viewBox="0 0 110.74 123.18" class="hexagon-shape">
+                                            <g id="hexagon-outline-layer">
+                                                <path
+                                                    d="M307.58,232.84l-40.2-23.21a14.17,14.17,0,0,1-7.09-12.27V150.94a14.17,14.17,0,0,1,7.09-12.27l40.2-23.21a14.17,14.17,0,0,1,14.17,0L362,138.67A14.17,14.17,0,0,1,369,150.94v46.42A14.17,14.17,0,0,1,362,209.63l-40.2,23.21A14.17,14.17,0,0,1,307.58,232.84Z"
+                                                    transform="translate(-259.29 -112.56)"
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col footer-widget d-none d-lg-block"
+                        data-aos="fade-up-sm"
+                        data-aos-delay="150"
+                    >
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">
+                                Learn more
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a class="d-block" href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="contact.html">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="media.html">Media</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="#">News</a>
+                                </li>
+                                <li>
+                                    <a class="d-block" href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col footer-widget d-none d-lg-block"
+                        data-aos="fade-up-sm"
+                        data-aos-delay="200"
+                    >
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">
+                                Our locations
+                            </h6>
+                            <ul class="list-with-icon location-list list-unstyled mb-0">
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>2A Kensington Crescent, Kingston</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>Island Village Main Street, Ocho Rios</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>
+                                            Whitter Village, Unit Eg-2, Ironshore, Montego Bay
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        <span>MagaMart, Waterloo</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col footer-widget d-none d-lg-block"
+                        data-aos="fade-up-sm"
+                        data-aos-delay="250"
+                    >
+                        <div class="widget-inner">
+                            <h6 class="widget-title mb-4 text-uppercase text-primary">Contact</h6>
+                            <ul class="list-with-icon list-unstyled mb-0">
+                                <li>
+                                    <a href="callto:+18768180310">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <span>(876) 818 0310</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:biz.info@tsltech.com">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <span>biz.info@tsltech.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+        <!-- ---------------------------------------------------- -->
+
+        <div>
+            <script>
+                document.documentElement.style.setProperty(
+                    "--scrollbar-offset",
+                    window.innerWidth - document.documentElement.clientWidth + "px"
+                );
+            </script>
+            <script>
+                (function (body) {
+                    "use strict";
+                    body.className = body.className.replace(/\btribe-no-js\b/, "tribe-js");
+                })(document.body);
+            </script>
+            <script>
+                /* <![CDATA[ */ var tribe_l10n_datatables = {
+                    aria: {
+                        sort_ascending: ": activate to sort column ascending",
+                        sort_descending: ": activate to sort column descending",
+                    },
+                    length_menu: "Show _MENU_ entries",
+                    empty_table: "No data available in table",
+                    info: "Showing _START_ to _END_ of _TOTAL_ entries",
+                    info_empty: "Showing 0 to 0 of 0 entries",
+                    info_filtered: "(filtered from _MAX_ total entries)",
+                    zero_records: "No matching records found",
+                    search: "Search:",
+                    all_selected_text: "All items on this page were selected. ",
+                    select_all_link: "Select all pages",
+                    clear_selection: "Clear Selection.",
+                    pagination: { all: "All", next: "Next", previous: "Previous" },
+                    select: { rows: { 0: "", _: ": Selected %d rows", 1: ": Selected 1 row" } },
+                    datepicker: {
+                        dayNames: [
+                            "Sunday",
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                        ],
+                        dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                        dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
+                        monthNames: [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June",
+                            "July",
+                            "August",
+                            "September",
+                            "October",
+                            "November",
+                            "December",
+                        ],
+                        monthNamesShort: [
+                            "January",
+                            "February",
+                            "March",
+                            "April",
+                            "May",
+                            "June",
+                            "July",
+                            "August",
+                            "September",
+                            "October",
+                            "November",
+                            "December",
+                        ],
+                        monthNamesMin: [
+                            "Jan",
+                            "Feb",
+                            "Mar",
+                            "Apr",
+                            "May",
+                            "Jun",
+                            "Jul",
+                            "Aug",
+                            "Sep",
+                            "Oct",
+                            "Nov",
+                            "Dec",
+                        ],
+                        nextText: "Next",
+                        prevText: "Prev",
+                        currentText: "Today",
+                        closeText: "Done",
+                        today: "Today",
+                        clear: "Clear",
+                    },
+                    registration_prompt:
+                        "There is unsaved attendee information. Are you sure you want to continue?",
+                }; /* ]]> */
+            </script>
+            <script type="text/javascript">
+                (function () {
+                    var c = document.body.className;
+                    c = c.replace(/woocommerce-no-js/, "woocommerce-js");
+                    document.body.className = c;
+                })();
+            </script>
+            <link
+                rel="stylesheet"
+                id="tribe-events-pro-views-v2-skeleton-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/views-skeleton.min.css?ver=6.0.0"
+                media="all"
+            />
+            <link
+                rel="stylesheet"
+                id="tribe-events-pro-views-v2-full-css"
+                href="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/css/views-full.min.css?ver=6.0.0"
+                media="all"
+            />
+            <script
+                src="https://connect.facebook.net/en_US/sdk.js?ver=1.13.0"
+                id="tec-virtual-fb-sdk-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/ical-links.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-ical-links-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/navigation-scroll.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-navigation-scroll-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/viewport.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-viewport-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/view-selector.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-view-selector-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-bootstrap-datepicker-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/events-bar.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-events-bar-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/month-mobile-events.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-month-mobile-events-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/multiday-events.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-multiday-events-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/month-grid.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-month-grid-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/vendor/tooltipster/tooltipster.bundle.min.js?ver=5.0.0.1"
+                id="tribe-tooltipster-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/tooltip.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-tooltip-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/datepicker.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-datepicker-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/events-bar-inputs.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-events-bar-inputs-js"
+            ></script>
+            <script id="jquery-cookie-js-extra">
+                var TribeTicketsPlus = {
+                    ajaxurl: "https:\/\/demo.theeventscalendar.com\/wp-admin\/admin-ajax.php",
+                    save_attendee_info_nonce: "5b28ba76df",
+                };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets-plus/vendor/jquery.cookie/jquery.cookie.js?ver=5.6.0"
+                id="jquery-cookie-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets-plus/vendor/jquery.deparam/jquery.deparam.js?ver=5.6.0"
+                id="jquery-deparam-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets-plus/src/resources/js/meta.min.js?ver=5.6.0"
+                id="event-tickets-plus-meta-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets-plus/src/resources/js/attendees-list.min.js?ver=5.6.0"
+                id="event-tickets-plus-attendees-list-js-js"
+            ></script>
+            <script id="tribe-events-virtual-single-js-js-extra">
+                var tribe_events_virtual_settings = { facebookAppId: "" };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-virtual/src/resources/js/events-virtual-single.min.js?ver=1.13.0"
+                id="tribe-events-virtual-single-js-js"
+            ></script>
+            <script id="tribe-events-filterbar-views-filters-js-js-extra">
+                var tribeFilterBarFilterMap = {
+                    0: "filterbar_events_virtual",
+                    tribe_featuredevent: "filterbar_featured",
+                    tribe_eventcategory: "filterbar_category",
+                    tribe_organizers: "filterbar_organizer",
+                    tribe_tags: "filterbar_tag",
+                    tribe_dayofweek: "filterbar_day_of_week",
+                    tribe_timeofday: "filterbar_time_of_day",
+                    tribe_cost: "filterbar_cost",
+                };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filters.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filters-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-clear.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-clear-js-js"
+            ></script>
+            <script src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js"></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/underscore.min.js?ver=1.13.3"
+                id="underscore-js"
+            ></script>
+            <script src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js"></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/vendor/tribe-selectWoo/dist/js/selectWoo.full.min.js?ver=5.0.0.1"
+                id="tribe-select2-js"
+            ></script>
+            <script src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/js/select2-after.js"></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/js/dropdowns.min.js?ver=5.0.0.1"
+                id="tribe-dropdowns-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-multiselects.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-multiselects-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-dropdowns.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-dropdowns-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.1"
+                id="jquery-ui-core-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.13.1"
+                id="jquery-ui-mouse-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.13.1"
+                id="jquery-ui-slider-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js?ver=5.4.0"
+                id="jquery-ui-touch-punch-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-range.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-range-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/vendor/swiper/dist/js/swiper.min.js?ver=6.0.0"
+                id="tribe-swiper-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-bar-slider.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-bar-slider-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-button.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-button-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-checkboxes.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-checkboxes-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-radios.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-radios-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-remove.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-remove-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/datepicker-pro.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-datepicker-pro-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/tooltip-pro.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-tooltip-pro-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/filter-scripts.min.js?ver=5.4.0"
+                id="tribe-filterbar-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar-filterbar/src/resources/js/views/filter-toggle.js?ver=5.4.0"
+                id="tribe-events-filterbar-views-filter-toggle-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/multiday-events-pro.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-multiday-events-pro-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/map-no-venue-modal.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-map-no-venue-modal-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/js/ticket-details.min.js?ver=5.5.0"
+                id="event-tickets-details-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/js/rsvp.min.js?ver=5.5.0"
+                id="event-tickets-tickets-rsvp-js-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/toggle-recurrence.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-toggle-recurrence-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/map-provider-google-maps.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-map-provider-google-maps-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-includes/js/jquery/ui/draggable.min.js?ver=1.13.1"
+                id="jquery-ui-draggable-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/vendor/nanoscroller/jquery.nanoscroller.min.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-nanoscroller-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/week-grid-scroller.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-week-grid-scroller-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/week-day-selector.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-week-day-selector-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/map-events-scroller.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-map-events-scroller-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/week-event-link.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-week-event-link-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/map-events.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-map-events-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/events-calendar-pro/src/resources/js/views/week-multiday-toggle.js?ver=6.0.0"
+                id="tribe-events-pro-views-v2-week-multiday-toggle-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.6.8.2"
+                id="jquery-blockui-js"
+            ></script>
+            <script id="wc-add-to-cart-js-extra">
+                var wc_add_to_cart_params = {
+                    ajax_url: "\/wp-admin\/admin-ajax.php",
+                    wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+                    i18n_view_cart: "View cart",
+                    cart_url: "https:\/\/demo.theeventscalendar.com\/cart\/",
+                    is_cart: "",
+                    cart_redirect_after_add: "no",
+                };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=6.8.2"
+                id="wc-add-to-cart-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.6.8.2"
+                id="js-cookie-js"
+            ></script>
+            <script id="woocommerce-js-extra">
+                var woocommerce_params = {
+                    ajax_url: "\/wp-admin\/admin-ajax.php",
+                    wc_ajax_url: "\/?wc-ajax=%%endpoint%%",
+                };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=6.8.2"
+                id="woocommerce-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/themes/kadence-demo-site-theme/assets/js/modals.js?ver=1.0.12"
+                id="teccom-modals-js"
+            ></script>
+            <script id="kadence-navigation-js-extra">
+                var kadenceConfig = {
+                    screenReader: { expand: "Expand child menu", collapse: "Collapse child menu" },
+                    breakPoints: { desktop: "1024", tablet: 768 },
+                    scrollOffset: "0",
+                };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/themes/kadence/assets/js/navigation.min.js?ver=1.1.26"
+                id="kadence-navigation-js"
+                async
+            ></script>
+            <script id="event-tickets-rsvp-js-extra">
+                var tribe_tickets_rsvp_strings = { attendee: "Attendee %1$s" };
+            </script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/event-tickets/src/resources/js/rsvp.min.js?ver=5.5.0"
+                id="event-tickets-rsvp-js"
+            ></script>
+            <script
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/common/src/resources/js/utils/query-string.js?ver=5.0.0.1"
+                id="tribe-query-string-js"
+            ></script>
+            <script
+                defer
+                src="https://demo.theeventscalendar.com/wp-content/plugins/the-events-calendar/src/resources/js/views/manager.js?ver=6.0.0.1"
+                id="tribe-events-views-v2-manager-js"
+            ></script>
+            <style
+                id="tribe-events-pro-views-v2-full-inline-css"
+                class="tec-customizer-inline-style"
+                type="text/css"
+            >
+                :root {
+                    /* Customizer-added Global Event styles */
+                    --tec-font-family-sans-serif: inherit;
+                    --tec-font-family-base: inherit;
+                    --tec-color-link-primary: #334aff;
+                    --tec-color-link-accent: #334aff;
+                    --tec-color-link-accent-hover: rgba(51, 74, 255, 0.8);
+                }
+            </style>
+        </div>
+
+        <!-- ------------------------------------------------------- -->
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="assets/js/aos.min.js"></script>
+        <script src="assets/js/headroom.min.js"></script>
+        <script src="assets/js/counterup2@2.0.2.js"></script>
+        <script src="assets/js/venobox.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>

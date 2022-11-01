@@ -18788,6 +18788,11 @@ a {
   width: 120px;
 }
 
+ul,
+ol {
+  margin: 0;
+}
+
 .tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
   padding: 0;
 }
@@ -18821,7 +18826,9 @@ a {
 
 .tribe-common .tribe-common-c-svgicon {
   color: #1b7661;
+  fill: #1b7661;
   transition: all 0.2s ease-in-out;
+  opacity: 1;
 }
 
 .tribe-common .tribe-common-cta {
@@ -18873,7 +18880,8 @@ fieldset.tribe-filter-bar-c-filter__filters-fieldset {
   border-color: #124c3f;
 }
 
-.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:focus, .tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:hover {
+.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:focus,
+.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:hover {
   background-color: #f8fefc;
   border-color: #1b7661;
 }
@@ -18888,6 +18896,85 @@ fieldset.tribe-filter-bar-c-filter__filters-fieldset {
   color: #fff !important;
   border: 1px solid #1b7661 !important;
   background-color: #1b7661 !important;
+}
+
+.content-area {
+  margin: 0;
+}
+
+.site-container,
+.site-header-row-layout-contained,
+.site-footer-row-layout-contained,
+.entry-hero-layout-contained,
+.alignfull > .wp-block-cover__inner-container,
+.alignwide > .wp-block-cover__inner-container {
+  padding: 0;
+}
+
+.entry-content-wrap {
+  padding: 0;
+}
+
+.tribe-events-event-image img {
+  width: 100%;
+}
+
+.tribe-events-content a {
+  border-bottom: 1px solid #1b7661;
+  color: #1b7661;
+  transition: all 0.2s ease-in-out;
+}
+
+.tribe-events-content a:active,
+.tribe-events-content a:focus,
+.tribe-events-content a:hover {
+  border-bottom: 1px solid currentColor;
+  color: #ed001f;
+}
+
+.tribe-common .tribe-common-c-btn-border,
+.tribe-common a.tribe-common-c-btn-border {
+  color: #1b7661;
+  display: inline-block;
+  width: auto;
+  background-color: var(--tec-color-background);
+  border: 1px solid #1b7661;
+  transition: all 0.2s ease-in-out;
+}
+
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button:focus-within,
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button:hover {
+  background-color: #1b7661;
+  color: #fff;
+}
+
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__button:hover svg {
+  fill: currentColor;
+  color: currentColor;
+}
+
+.single-tribe_events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__content,
+.tribe-events .tribe-events-c-subscribe-dropdown .tribe-events-c-subscribe-dropdown__content {
+  position: absolute;
+  z-index: 100;
+}
+
+.tribe-events-meta-group a {
+  color: #1b7661;
+}
+
+.tribe-events-event-meta a,
+.tribe-events-event-meta a:visited {
+  color: #1b7661;
+}
+
+.tribe-events-event-meta a:focus,
+.tribe-events-event-meta a:hover {
+  color: #ed001f;
+}
+
+.tribe-events-back a:hover {
+  color: #1b7661;
 }
 
 /*# sourceMappingURL=style.css.map */
