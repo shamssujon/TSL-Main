@@ -18,16 +18,26 @@
         visibility: hidden;
         transform: translateY(10px);
         transition: $transition-base;
-        
+
         &.open {
             opacity: 1;
             visibility: visible;
             transform: translateY(0);
         }
+
+        .search-input {
+            box-shadow: none;
+        }
     }
 
     .search-toggler-btn {
         font-size: $font-size-lg;
+        background: transparent;
+        
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba($primary, 0.2);
+        }
     }
 }
 
@@ -214,6 +224,9 @@
             transition: $transition-base;
             width: 60px;
             padding: 0;
+            background: transparent;
+            color: inherit;
+            border-left: 1px solid darken($light, 10);
 
             &:hover,
             &[aria-expanded="true"] {
@@ -223,6 +236,10 @@
 
             &::after {
                 display: none;
+            }
+
+            i {
+                font-size: $font-size-lg;
             }
         }
     }

@@ -1,0 +1,105 @@
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+    padding: 0;
+}
+
+.tribe-events .datepicker .day.active,
+.tribe-events .datepicker .day.active.focused,
+.tribe-events .datepicker .day.active:focus,
+.tribe-events .datepicker .day.active:hover,
+.tribe-events .datepicker .month.active,
+.tribe-events .datepicker .month.active.focused,
+.tribe-events .datepicker .month.active:focus,
+.tribe-events .datepicker .month.active:hover,
+.tribe-events .datepicker .year.active,
+.tribe-events .datepicker .year.active.focused,
+.tribe-events .datepicker .year.active:focus,
+.tribe-events .datepicker .year.active:hover {
+    background: $primary;
+}
+
+.tribe-common .tribe-common-anchor-thin {
+    border: 0;
+
+    transition: $transition-base;
+}
+
+.tribe-common .tribe-common-anchor-thin:active,
+.tribe-common .tribe-common-anchor-thin:focus,
+.tribe-common .tribe-common-anchor-thin:hover {
+    border: 0;
+    color: $primary;
+}
+
+.tribe-common .tribe-common-c-svgicon {
+    color: $primary;
+    transition: $transition-base;
+}
+
+// .tribe-common .tribe-common-b3 {
+//     color: var(--tec-color-text-primary);
+// }
+
+.tribe-common .tribe-common-cta {
+    border: 1px solid $primary;
+    color: $primary !important;
+    transition: $transition-base;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 0.25rem;
+    font-size: $font-size-base;
+
+    &:hover {
+        background: $primary;
+        color: $white !important;
+        border-color: $primary;
+    }
+}
+
+.tribe-events-c-small-cta__price {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+}
+
+fieldset.tribe-filter-bar-c-filter__filters-fieldset {
+    display: grid;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[data-selected] {
+    background: $primary;
+    color: var(--global-palette-btn);
+}
+
+.tribe-filter-bar .tribe-filter-bar-c-range__slider .ui-slider-range {
+    background: $primary;
+}
+.tribe-common .tribe-common-form-control-checkbox__input,
+.tribe-common .tribe-common-form-control-radio__input {
+    background-color: var(--tec-form-color-background);
+    border: 1px solid var(--tec-form-color-border-default);
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
+.tribe-common .tribe-common-form-control-checkbox__input:checked,
+.tribe-common .tribe-common-form-control-radio__input:checked {
+    background: $primary;
+    border-color: darken($primary, 10);
+}
+
+.tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:focus, .tribe-filter-bar .tribe-filter-bar-c-pill--button .tribe-filter-bar-c-pill__pill:hover {
+    background-color: lighten($primary, 70);
+    border-color: $primary;
+}
+
+.tribe-events-c-search__button {
+    color: $primary !important;
+    border: 1px solid $primary !important;
+    transition: $transition-base;
+}
+
+.tribe-events-c-search__button:hover {
+    color: $white !important;
+    border: 1px solid $primary !important;
+    background-color: $primary !important;
+}
